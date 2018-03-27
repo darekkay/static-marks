@@ -1,0 +1,4 @@
+collection1:
+  - bucket:
+    - link1: https://example.com:dsa
+      - Notes

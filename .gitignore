@@ -1,0 +1,14 @@
+### Node.js ###
+
+/node_modules
+.env
+
+### IDE ###
+
+/.idea
+*.iml
+
+### App ###
+
+/build
+*.log

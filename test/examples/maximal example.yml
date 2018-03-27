@@ -1,0 +1,21 @@
+Simple Collection:
+  - Bucket:
+    - link1: https://example.com
+    - link2:
+      - https://example.com
+
+  - Bucket:
+    - link:
+      - https://example.com
+      - link: https://example.com
+      - This is just a text note, but it's also quite long
+
+Whitespace collection:
+  - Whitespace bucket:
+    - whitespace link: https://example.com
+
+Lorem:
+  - Ipsum:
+    - dolor: https://example.com
+    - sit: https://example.com
+    - amet: https://example.com

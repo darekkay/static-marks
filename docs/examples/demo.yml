@@ -1,0 +1,33 @@
+Apps:
+  - Browsers:
+    - Firefox: https://www.mozilla.org/firefox/
+    - Chrome: https://www.google.com/chrome/
+    - Opera: https://www.opera.com/
+    - Safari: https://www.apple.com/safari/
+    - Internet Explorer:
+      - https://www.microsoft.com/download/internet-explorer.aspx
+      - Not sure how this got on the list
+
+  - Editors:
+    - Notepad++: https://notepad-plus-plus.org/
+    - VSCode: https://code.visualstudio.com/
+    - Atom: https://atom.io/
+
+Stock Resources:
+  - Photos:
+    - LibreStock: https://librestock.com/
+    - Stock Up: https://www.sitebuilderreport.com/stock-up
+    - Pexels: https://www.pexels.com/
+  - Icons:
+    - Font Awesome:
+      - https://fontawesome.com/
+      - Favicon Generator: https://paulferrett.com/fontawesome-favicon/
+    - Simple Icons:
+      - https://simpleicons.org/
+      - Brand SVG icons
+    - Octicons: https://octicons.github.com/
+  - Fonts:
+    - Font Squirrel: https://www.fontsquirrel.com/
+    - Google Fonts:
+      - https://fonts.google.com/
+      - GitHub Repository: https://github.com/google/fonts

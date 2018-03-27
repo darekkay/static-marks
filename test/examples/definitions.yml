@@ -1,0 +1,20 @@
+Collection:
+  - Bucket:
+    - Link 1: https://example.com
+    - Link 2:
+      - https://example.com
+    - Link with notes:
+      - https://example.com
+      - This is a text note
+      - Link note: https://example.com
+
+Collection 2:
+  - Bucket 1:
+    - Link 1: https://example.com
+    - Link 2: https://example.com
+    - Link 3: https://example.com
+  - Bucket 2:
+    - Link 1: https://example.com
+    - Link 2: https://example.com
+    - Link 3: https://example.com
+    - Link 4: https://example.com
