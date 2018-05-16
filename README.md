@@ -1,5 +1,9 @@
 # Static Marks
 
+[![Travis](https://img.shields.io/travis/darekkay/static-marks.svg?style=flat-square)](https://travis-ci.org/darekkay/static-marks) [![npm](https://img.shields.io/npm/v/static-marks.svg?style=flat-square)](https://www.npmjs.com/package/static-marks) [![license](https://img.shields.io/github/license/darekkay/static-marks.svg?style=flat-square)](https://github.com/darekkay/static-marks/blob/master/LICENSE)
+
+Convert your plain bookmark files into a static web app.
+
 ![Screenshot](docs/screenshot.png)
 
 ## Installation
