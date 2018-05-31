@@ -41,7 +41,7 @@ const build = (files, config) => {
     })
     .filter(bookmark => bookmark !== undefined);
 
-  const result = render(bookmarks, template);
+  const result = render({ template, bookmarks, config });
 
   if (config.output) {
     save(config.output, result);

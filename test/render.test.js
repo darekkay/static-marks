@@ -3,12 +3,22 @@ const { expect } = require("chai");
 const render = require("../src/render.js");
 
 describe("Render", () => {
-  it("replaces placeholder with content", () => {
-    const template = `foo-"%BOOKMARKS%"-bar`;
-    expect(render({ a: 1 }, template)).to.contain('{"a":1}');
+  it("replaces bookmarks placeholder with content", () => {
+    const template = `foo-"%INJECTED%"-bar`;
+    expect(render({ template, bookmarks: { a: 1 } })).to.contain(
+      '"bookmarks":{"a":1}'
+    );
   });
-  it("returns an error if the placeholder is not present", () => {
+
+  it("replaces title placeholder with content", () => {
+    const template = `foo-"%INJECTED%"-bar`;
+    expect(render({ template, config: { title: "moo" } })).to.contain(
+      '"title":"moo"'
+    );
+  });
+
+  it("returns the template if the placeholder is not present", () => {
     const template = `foo-bar`;
-    expect(render({ a: 1 }, template)).to.have.lengthOf(0);
+    expect(render({ template, bookmarks: { a: 1 } })).to.equal(template);
   });
 });

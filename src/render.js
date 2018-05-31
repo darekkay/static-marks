@@ -1,17 +1,12 @@
 /** Render bookmarks into a template */
-
-const logger = require("../src/logger.js");
-
-const placeholder = '"%BOOKMARKS%"';
-
-module.exports = (bookmarks, template) => {
-  if (template.indexOf(placeholder) < 0) {
-    logger.warn(`Template does not contain placeholder: ${placeholder}`);
-    return "";
-  }
+module.exports = ({ template, bookmarks, config = {} }) => {
+  const injected = {
+    bookmarks,
+    title: config.title
+  };
 
   return template.replace(
-    placeholder,
-    `window.bookmarks=${JSON.stringify(bookmarks)};`
+    '"%INJECTED%"',
+    `window.staticmarks=${JSON.stringify(injected)};`
   );
 };

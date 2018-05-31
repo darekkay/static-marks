@@ -11,6 +11,7 @@ program
   .description(pkg.description)
   .usage("[options] <files>")
   .option("-o, --output [file]", "output to a file (use stdout by default)")
+  .option("-t, --title [title]", "set document title")
   .version(pkg.version, "-v, --version")
   .parse(process.argv);
 
@@ -26,7 +27,8 @@ if (files.length === 0) {
 }
 
 const config = {
-  output: program.output
+  output: program.output,
+  title: program.title || "Static Marks"
 };
 
 index.build(files, config);
