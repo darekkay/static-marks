@@ -44,8 +44,9 @@
   },
   "scripts": {
     "format": "prettier --write -- \"{src,bin,test}/**/*.{js,json}\"",
-    "lint": "eslint --fix **/*.js",
-    "prepublishOnly": "npm run lint && npm run test",
+    "lint:check": "eslint **/*.js",
+    "lint:fix": "eslint --fix **/*.js",
+    "prepublishOnly": "npm run lint:check && npm run test",
     "start": "node bin/static-marks -o build/bookmarks.html test/examples/*",
     "test": "mocha"
   }
