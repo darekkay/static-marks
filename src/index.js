@@ -13,13 +13,10 @@ const save = (output, contents) => {
   mkdirp(path.dirname(output), err => {
     if (err) return logger.error(err);
 
-    return fs.writeFile(
-      output,
-      contents,
-      error =>
-        error
-          ? logger.error(error)
-          : logger.info(`Created bookmarks file: ${path.resolve(output)}`)
+    return fs.writeFile(output, contents, error =>
+      error
+        ? logger.error(error)
+        : logger.info(`Created bookmarks file: ${path.resolve(output)}`)
     );
   });
 };

@@ -10,20 +10,20 @@
     "url": "https://github.com/darekkay/static-marks/issues"
   },
   "dependencies": {
-    "commander": "2.15.1",
-    "glob": "7.1.2",
-    "js-yaml": "3.11.0",
+    "commander": "2.19.0",
+    "glob": "7.1.3",
+    "js-yaml": "3.12.0",
     "mkdirp": "0.5.1"
   },
   "devDependencies": {
-    "chai": "4.1.2",
-    "eslint": "4.19.1",
-    "eslint-config-airbnb-base": "12.1.0",
-    "eslint-config-prettier": "2.9.0",
-    "eslint-plugin-import": "2.9.0",
-    "eslint-plugin-prettier": "2.6.0",
-    "mocha": "5.0.5",
-    "prettier": "1.11.1"
+    "chai": "4.2.0",
+    "eslint": "5.9.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-config-prettier": "3.1.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-prettier": "3.0.0",
+    "mocha": "5.2.0",
+    "prettier": "1.15.1"
   },
   "files": [
     "bin",
@@ -43,6 +43,7 @@
     "url": "https://github.com/darekkay/static-marks.git"
   },
   "scripts": {
+    "ci": "npm run lint:check && npm run test",
     "format": "prettier --write -- \"{src,bin,test}/**/*.{js,json}\"",
     "lint:check": "eslint **/*.js",
     "lint:fix": "eslint --fix **/*.js",

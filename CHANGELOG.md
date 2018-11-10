@@ -1,5 +1,7 @@
 ## Unreleased
 
+- :construction_worker_man: Update dependencies
+
 ## 1.0.1 (2018-06-27)
 
 - :sparkles: Make document title configurable via `--title` cli argument.
