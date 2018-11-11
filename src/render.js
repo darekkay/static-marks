@@ -6,7 +6,7 @@ module.exports = ({ template, bookmarks, config = {} }) => {
   };
 
   return template.replace(
-    '"%INJECTED%"',
+    'var injected="%INJECTED%"',
     `window.staticmarks=${JSON.stringify(injected)};`
   );
 };

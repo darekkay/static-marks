@@ -4,14 +4,14 @@ const render = require("../src/render.js");
 
 describe("Render", () => {
   it("replaces bookmarks placeholder with content", () => {
-    const template = `foo-"%INJECTED%"-bar`;
+    const template = `foo-var injected="%INJECTED%"-bar`;
     expect(render({ template, bookmarks: { a: 1 } })).to.contain(
       '"bookmarks":{"a":1}'
     );
   });
 
   it("replaces title placeholder with content", () => {
-    const template = `foo-"%INJECTED%"-bar`;
+    const template = `foo-var injected="%INJECTED%"-bar`;
     expect(render({ template, config: { title: "moo" } })).to.contain(
       '"title":"moo"'
     );
