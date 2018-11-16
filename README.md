@@ -2,16 +2,22 @@
 
 [![Travis](https://img.shields.io/travis/darekkay/static-marks.svg?style=flat-square)](https://travis-ci.org/darekkay/static-marks) [![npm](https://img.shields.io/npm/v/static-marks.svg?style=flat-square)](https://www.npmjs.com/package/static-marks) [![license](https://img.shields.io/github/license/darekkay/static-marks.svg?style=flat-square)](https://github.com/darekkay/static-marks/blob/master/LICENSE)
 
-Convert your plain bookmark files into a static web app.
+Convert your **plain bookmark** files into a **static web app**.
 
 ![Screenshot](docs/screenshot.png)
 
 ## Installation
 
-Install either globally or locally.
+As a globally available CLI tool:
 
 ```bash
-npm install [-g] static-marks
+npm install -g static-marks
+```
+
+As a local dependency in your project:
+
+```bash
+npm install --save static-marks
 ```
 
 ### Usage
@@ -36,7 +42,7 @@ static-marks            # Use all *.yml files in the current folder
 
 ### File format
 
-A bookmark file is written in [YAML](http://yaml.org/). It uses multiple levels of hierarchy:
+Bookmark files are written in [YAML](http://yaml.org/). They use multiple levels of hierarchy:
 
 ```yaml
 Collection:
