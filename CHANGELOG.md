@@ -1,5 +1,8 @@
 ## Unreleased
 
+
+## 1.0.3 (2018-11-16)
+
 - :bug: Re-add missing cross icon used to clear the current filter.
 
 ## 1.0.2 (2018-11-11)
