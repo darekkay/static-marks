@@ -1,6 +1,14 @@
 ## Unreleased
 
 
+## 1.0.4 (2018-12-13)
+
+- :sparkles: Display the source file name for each collection on mouse hover.
+  - When using multiple bookmark files, it is now easier to find the file where a bookmark is defined in.
+- :rocket: Match the collection name in the filter.
+- :rocket: Inline the Favicon.
+- :construction_worker_man: Include app version in the footer.
+
 ## 1.0.3 (2018-11-16)
 
 - :bug: Re-add missing cross icon used to clear the current filter.
