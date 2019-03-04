@@ -60,9 +60,9 @@ If multiple files are provided to `static-marks`, they will become selectable vi
 
 ### Examples
 
-- [Simple example](https://staticmarks.com/demo/demo-example.html)
-- [Curated list of awesome lists](https://staticmarks.com/demo/demo-awesome.html) (based on the [awesome](https://github.com/sindresorhus/awesome) project)
-- [All examples](https://staticmarks.com/demo/demo-all.html) (combined)
+- [Simple example](https://darekkay.com/static-marks/demo/demo-example.html)
+- [Curated list of awesome lists](https://darekkay.com/static-marks/demo/demo-awesome.html) (based on the [awesome](https://github.com/sindresorhus/awesome) project)
+- [All examples](https://darekkay.com/static-marks/demo/demo-all.html) (combined)
 
 See [examples](docs/examples) for source files.
 
