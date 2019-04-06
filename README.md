@@ -8,17 +8,19 @@ Convert your **plain bookmark** files into a **static web app**.
 
 ## Installation
 
-As a globally available CLI tool:
+- As a globally available CLI tool:
 
 ```bash
 npm install -g static-marks
 ```
 
-As a local dependency in your project:
+- As a local dependency in your project:
 
 ```bash
 npm install --save static-marks
 ```
+
+- As a [docker container](https://github.com/gaerfield/static-marks-docker) (unofficial).
 
 ### Usage
 
