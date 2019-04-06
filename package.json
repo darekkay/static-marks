@@ -10,20 +10,20 @@
     "url": "https://github.com/darekkay/static-marks/issues"
   },
   "dependencies": {
-    "commander": "2.19.0",
+    "commander": "2.20.0",
     "glob": "7.1.3",
-    "js-yaml": "3.12.0",
+    "js-yaml": "3.13.1",
     "mkdirp": "0.5.1"
   },
   "devDependencies": {
     "chai": "4.2.0",
-    "eslint": "5.9.0",
+    "eslint": "5.16.0",
     "eslint-config-airbnb-base": "13.1.0",
-    "eslint-config-prettier": "3.1.0",
-    "eslint-plugin-import": "2.14.0",
-    "eslint-plugin-prettier": "3.0.0",
-    "mocha": "5.2.0",
-    "prettier": "1.15.1"
+    "eslint-config-prettier": "4.1.0",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-prettier": "3.0.1",
+    "mocha": "6.0.2",
+    "prettier": "1.16.4"
   },
   "files": [
     "bin",
