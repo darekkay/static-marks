@@ -70,6 +70,6 @@ See [examples](docs/examples) for source files.
 
 ## License
 
-Copyright 2018 Darek Kay <hello@darekkay.com>  
+Copyright 2019 Darek Kay <hello@darekkay.com>  
 
 This project and its contents are open source under the [MIT license](LICENSE).

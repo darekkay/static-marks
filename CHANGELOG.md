@@ -1,6 +1,10 @@
 ## Unreleased
 
 
+## 1.0.5 (2019-04-06)
+- :construction_worker: Update dependencies.
+- :book: Add link to the unofficial docker container.
+
 ## 1.0.4 (2018-12-13)
 
 - :sparkles: Display the source file name for each collection on mouse hover.
