@@ -1,6 +1,9 @@
 ## Unreleased
 
 
+## 1.0.6 (2019-04-06)
+- :construction_worker: Update outdated template file.
+
 ## 1.0.5 (2019-04-06)
 - :construction_worker: Update dependencies.
 - :book: Add link to the unofficial docker container.
