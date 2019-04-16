@@ -1,6 +1,10 @@
 ## Unreleased
 
 
+## 1.0.7 (2019-04-16)
+- :gem: Improve header design.
+- :bug: Fix menu items being focusable while hidden.
+
 ## 1.0.6 (2019-04-06)
 - :construction_worker: Update outdated template file.
 
