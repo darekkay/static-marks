@@ -7,8 +7,6 @@ const logger = require("./logger");
 const transform = require("./transform-json");
 const render = require("./render");
 
-const templatePath = path.join(__dirname, "_template.html");
-
 const save = (output, contents) => {
   mkdirp(path.dirname(output), err => {
     if (err) return logger.error(err);
@@ -22,7 +20,7 @@ const save = (output, contents) => {
 };
 
 const build = (files, config) => {
-  const template = fs.readFileSync(templatePath, "utf-8");
+  const template = fs.readFileSync(config.templateFilePath, "utf-8");
 
   const bookmarks = files
     .map(file => {

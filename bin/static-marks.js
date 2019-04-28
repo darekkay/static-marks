@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+const path = require("path");
 const program = require("commander");
 const glob = require("glob");
 
@@ -12,6 +13,7 @@ program
   .usage("[options] <files>")
   .option("-o, --output [file]", "output to a file (use stdout by default)")
   .option("-t, --title [title]", "set document title")
+  .option("--template-file [file]", "use a custom web page template")
   .version(pkg.version, "-v, --version")
   .parse(process.argv);
 
@@ -28,7 +30,9 @@ if (files.length === 0) {
 
 const config = {
   output: program.output,
-  title: program.title || "Static Marks"
+  title: program.title || "Static Marks",
+  templateFilePath:
+    program.templateFile || path.join(__dirname, "..", "src", "_template.html")
 };
 
 index.build(files, config);

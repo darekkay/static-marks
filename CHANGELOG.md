@@ -1,5 +1,5 @@
 ## Unreleased
-
+- :sparkles: Add support for custom web page templates.
 
 ## 1.0.7 (2019-04-16)
 - :gem: Improve header design.

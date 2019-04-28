@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Static Marks - Custom Template</title>
+  <script>
+    // The following line will be replaced with a bookmarks object:
+    var injected="%INJECTED%";
+  </script>
+  <style>
+    html {
+      font-size: 62.5%;
+      box-sizing: border-box;
+      background-repeat: no-repeat;
+    }
+
+    *,
+    ::after,
+    ::before {
+      box-sizing: inherit;
+      background-repeat: inherit;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+      font-size: 1.8rem;
+      line-height: 1.5;
+      margin: 0;
+      color: #2b3236;
+    }
+
+    main {
+      width: 100%;
+      max-width: 800px;
+      margin: 1rem auto;
+      padding: 1rem 2.5rem;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a,
+    a:hover,
+    a:visited {
+      color: #005aff;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2.5rem 1rem;
+
+      background: #202020;
+      color: #fff;
+    }
+
+    header h1 {
+      margin: 0;
+      padding: 0;
+      border: none;
+      cursor: default;
+    }
+
+    h1,
+    h2 {
+      font-weight: 600;
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid #eaecef;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bookmarks</h1>
+  </header>
+
+  <main>
+    <div class="bookmarks"></div>
+  </main>
+
+  <script>
+    const bookmarks = window.staticmarks.bookmarks; // injected by static marks
+    const node = document.querySelector(".bookmarks");
+    // Files
+    bookmarks.forEach(file => {
+      const fileNode = document.createElement("h2");
+      fileNode.innerText = file.key;
+
+      // Collections
+      const collectionListNode = document.createElement("ul");
+      file.collections.forEach(collection => {
+        const collectionNode = document.createElement("li");
+        collectionNode.innerText = collection.title;
+
+        // Buckets
+        const bucketListNode = document.createElement("ul");
+        collection.buckets.forEach(bucket => {
+          const bucketNode = document.createElement("li");
+          bucketNode.innerText = bucket.title;
+
+          // Links
+          const linkListNode = document.createElement("ul");
+          bucket.links.forEach(link => {
+            const linkItemNode = document.createElement("li");
+            const linkNode = document.createElement("a");
+            linkNode.innerText = link.title;
+            linkNode.href = link.url;
+
+            // bookmark notes are stripped in this template
+            // iterate over link.notes to display them
+
+            linkItemNode.appendChild(linkNode);
+            linkListNode.appendChild(linkItemNode);
+          });
+
+          bucketNode.appendChild(linkListNode);
+          bucketListNode.appendChild(bucketNode);
+        });
+
+        collectionNode.appendChild(bucketListNode);
+        collectionListNode.appendChild(collectionNode);
+      });
+      node.appendChild(fileNode);
+      node.appendChild(collectionListNode);
+    });
+  </script>
+</body>
+</html>
