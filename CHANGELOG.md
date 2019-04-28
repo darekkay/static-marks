@@ -1,4 +1,7 @@
 ## Unreleased
+
+
+## 1.0.8 (2019-04-28)
 - :sparkles: Add support for custom web page templates.
 
 ## 1.0.7 (2019-04-16)
