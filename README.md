@@ -6,6 +6,20 @@ Convert your **plain bookmark** files into a **static web app**.
 
 ![Screenshot](docs/screenshot.png)
 
+## Features
+
+- Share your bookmarks app via a single HTML file.
+- It's free and open source.
+- Browser-independant.
+
+### Demo
+
+- [Simple example](https://darekkay.com/static-marks/demo/demo-example.html)
+- [Curated list of awesome lists](https://darekkay.com/static-marks/demo/demo-awesome.html) (based on the [awesome](https://github.com/sindresorhus/awesome) project)
+- [All examples](https://darekkay.com/static-marks/demo/demo-all.html) (combined)
+
+See [examples](docs/examples) for source files.
+
 ## Installation
 
 - As a globally available CLI tool:
@@ -22,54 +36,12 @@ npm install --save static-marks
 
 - As a [docker container](https://github.com/gaerfield/static-marks-docker) (unofficial).
 
-### Usage
+## Documentation
 
-```bash
-static-marks -o bookmarks.html [glob]
-```
-
-or
-
-```bash
-static-marks [glob] >> bookmarks.html
-```
-
-`glob` can be any [node-glob](https://github.com/isaacs/node-glob) expression, e.g.:
-
-```bash
-static-marks demo.yml   # Use a single file
-static-marks files/*    # Use all *.yml files in folder
-static-marks            # Use all *.yml files in the current folder
-```
-
-### File format
-
-Bookmark files are written in [YAML](http://yaml.org/). They use multiple levels of hierarchy:
-
-```yaml
-Collection:
-  - Bucket:
-    - Link 1: https://example.com
-    - Link 2:
-      - https://example.com
-    - Link with notes:
-      - https://example.com
-      - This is a text note
-      - Link note: https://example.com
-```
-
-If multiple files are provided to `static-marks`, they will become selectable via a menu.
-
-### Examples
-
-- [Simple example](https://darekkay.com/static-marks/demo/demo-example.html)
-- [Curated list of awesome lists](https://darekkay.com/static-marks/demo/demo-awesome.html) (based on the [awesome](https://github.com/sindresorhus/awesome) project)
-- [All examples](https://darekkay.com/static-marks/demo/demo-all.html) (combined)
-
-See [examples](docs/examples) for source files.
+Visit <a href="https://darekkay.com/static-marks" target="_blank" rel="noopener">darekkay.com/static-marks</a> to view the complete documentation.
 
 ## License
 
-Copyright 2019 Darek Kay <hello@darekkay.com>  
+Copyright 2019 Darek Kay <hello@darekkay.com>
 
 This project and its contents are open source under the [MIT license](LICENSE).
