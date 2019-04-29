@@ -6,6 +6,7 @@ const program = require("commander");
 const pkg = require("../package.json");
 
 const build = require("./build");
+const importBookmarks = require("./import");
 
 program
   .description(pkg.description)
@@ -25,6 +26,19 @@ program
     console.log("Examples:");
     console.log("");
     console.log("  $ static-marks build bookmarks.yml > bookmarks.html");
+  });
+
+// import
+program
+  .command("import <file>")
+  .description("import bookmarks from chrome, firefox or pocket")
+  .option("-o, --output [file]", "output to a file (use stdout by default)")
+  .action((file, options) => importBookmarks({ file, options }))
+  .on("--help", () => {
+    console.log("");
+    console.log("Examples:");
+    console.log("");
+    console.log("  $ static-marks import exported.html > imported.yml");
   });
 
 program.parse(process.argv);

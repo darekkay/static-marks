@@ -10,7 +10,8 @@ Convert your **plain bookmark** files into a **static web app**.
 
 - Share your bookmarks app via a single HTML file.
 - It's free and open source.
-- Browser-independant.
+- Browser-independent.
+- Import bookmarks from Chrome, Firefox or Pocket.
 
 ### Demo
 

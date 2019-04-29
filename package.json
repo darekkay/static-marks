@@ -10,6 +10,7 @@
     "url": "https://github.com/darekkay/static-marks/issues"
   },
   "dependencies": {
+    "bookmarks-parser": "1.1.0",
     "commander": "2.20.0",
     "glob": "7.1.3",
     "js-yaml": "3.13.1",

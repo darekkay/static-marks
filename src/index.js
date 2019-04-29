@@ -1,23 +1,11 @@
 const fs = require("fs");
 const path = require("path");
-const mkdirp = require("mkdirp");
 const yaml = require("js-yaml");
 
 const logger = require("./logger");
 const transform = require("./transform-json");
 const render = require("./render");
-
-const save = (output, contents) => {
-  mkdirp(path.dirname(output), err => {
-    if (err) return logger.error(err);
-
-    return fs.writeFile(output, contents, error =>
-      error
-        ? logger.error(error)
-        : logger.info(`Created bookmarks file: ${path.resolve(output)}`)
-    );
-  });
-};
+const { writeFile } = require("./utils");
 
 const build = (files, config) => {
   const template = fs.readFileSync(config.templateFilePath, "utf-8");
@@ -39,7 +27,7 @@ const build = (files, config) => {
   const result = render({ template, bookmarks, config });
 
   if (config.output) {
-    save(config.output, result);
+    writeFile(config.output, result);
   } else {
     logger.log(result); // Use stdout by default
   }
