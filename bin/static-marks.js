@@ -1,38 +1,34 @@
 #!/usr/bin/env node
+/* eslint-disable no-console */
 
-const path = require("path");
 const program = require("commander");
-const glob = require("glob");
 
 const pkg = require("../package.json");
-const index = require("../src/index");
-const logger = require("../src/logger");
+
+const build = require("./build");
 
 program
   .description(pkg.description)
-  .usage("[options] <files>")
+  .usage("[options] <command>")
+  .version(pkg.version);
+
+// build
+program
+  .command("build <files...>")
+  .description("build bookmarks app")
   .option("-o, --output [file]", "output to a file (use stdout by default)")
   .option("-t, --title [title]", "set document title")
   .option("--template-file [file]", "use a custom web page template")
-  .version(pkg.version, "-v, --version")
-  .parse(process.argv);
+  .action((args, options) => build({ args, options }))
+  .on("--help", () => {
+    console.log("");
+    console.log("Examples:");
+    console.log("");
+    console.log("  $ static-marks build bookmarks.yml > bookmarks.html");
+  });
 
-const args = program.args.length > 0 ? program.args : ["./*"]; // use the current directory as default
+program.parse(process.argv);
 
-const files = []
-  .concat(...args.map(file => glob.sync(file, { realpath: true })))
-  .filter(file => file.endsWith(".yml"));
-
-if (files.length === 0) {
-  logger.error(`No *.yml files found. (Used glob pattern: ${args})`);
-  process.exit(1);
+if (program.args.length === 0) {
+  program.help();
 }
-
-const config = {
-  output: program.output,
-  title: program.title || "Static Marks",
-  templateFilePath:
-    program.templateFile || path.join(__dirname, "..", "src", "_template.html")
-};
-
-index.build(files, config);
