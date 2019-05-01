@@ -8,6 +8,10 @@
 /.idea
 *.iml
 
+### Docs ###
+
+/docs/build
+
 ### App ###
 
 /build

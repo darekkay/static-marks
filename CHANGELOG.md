@@ -2,6 +2,7 @@
 - :sparkles: Import bookmarks from Chrome, Firefox or Pocket.
 - :boom: BREAKING CHANGE: The CLI interface was refactored to support subcommands. To build a bookmarks app, use the `build` command: `static-marks [options] build <files>`.
 - :boom: BREAKING CHANGE: Input file argument(s) are now required (previously the current folder was used as fallback).
+- :book: Improve and unify the documentation.
 
 ## 1.0.8 (2019-04-28)
 - :sparkles: Add support for custom web page templates.

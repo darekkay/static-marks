@@ -2,24 +2,42 @@
 
 [![Travis](https://img.shields.io/travis/darekkay/static-marks.svg?style=flat-square)](https://travis-ci.org/darekkay/static-marks) [![npm](https://img.shields.io/npm/v/static-marks.svg?style=flat-square)](https://www.npmjs.com/package/static-marks) [![license](https://img.shields.io/github/license/darekkay/static-marks.svg?style=flat-square)](https://github.com/darekkay/static-marks/blob/master/LICENSE)
 
+<div align="center" class="text-center">
+
 Convert your **plain bookmark** files into a **static web app**.
 
-![Screenshot](docs/screenshot.png)
+![](assets/img/workflow.svg)
 
-## Features
+</div>
 
-- Share your bookmarks app via a single HTML file.
-- It's free and open source.
+<!-- ![Screenshot](assets/img/screenshot.png) -->
+
+- **Share** your bookmarks app via a single HTML file.
+- It's **free** and [open source](https://github.com/darekkay/static-marks).
 - Browser-independent.
-- Import bookmarks from Chrome, Firefox or Pocket.
+- **Import** bookmarks from Chrome, Firefox or Pocket.
 
-### Demo
+🔖 [**View Live Demo**](https://darekkay.com/static-marks/demo/default.html) 
 
-- [Simple example](https://darekkay.com/static-marks/demo/demo-example.html)
-- [Curated list of awesome lists](https://darekkay.com/static-marks/demo/demo-awesome.html) (based on the [awesome](https://github.com/sindresorhus/awesome) project)
-- [All examples](https://darekkay.com/static-marks/demo/demo-all.html) (combined)
+## Quickstart
 
-See [examples](docs/examples) for source files.
+- Install Static Marks:
+
+```bash
+npm install -g static-marks
+```
+
+- Convert your (exported) browser bookmarks to YAML:
+
+```bash
+static-marks import browser-bookmarks.html > bookmarks.yml
+```
+
+- Generate your bookmarks app:
+
+```bash
+static-marks build bookmarks.yml > bookmarks.html
+```
 
 ## Installation
 
@@ -37,12 +55,80 @@ npm install --save static-marks
 
 - As a [docker container](https://github.com/gaerfield/static-marks-docker) (unofficial).
 
-## Documentation
+## Usage
 
-Visit <a href="https://darekkay.com/static-marks" target="_blank" rel="noopener">darekkay.com/static-marks</a> to view the complete documentation.
+```
+static-marks [options] <command>
+
+Options:
+  -V, --version               output the version number
+  -h, --help                  output usage information
+
+Commands:
+  build [options] <files...>  build bookmarks app
+  import [options] <file>     import bookmarks from chrome, firefox or pocket
+```
+
+Run `static-marks <command> --help` to view the usage of a specific command.
+
+### Build bookmarks app
+
+```
+static-marks build [options] <files...>
+
+Options:
+  -o, --output [file]     output to a file (use stdout by default)
+  -t, --title [title]     set document title
+  --template-file [file]  use a custom web page template
+```
+
+Examples:
+
+```bash
+static-marks build bookmarks.yml > bookmarks.html  # Single file
+static-marks build files/* > bookmarks.html        # All files at path
+```
+
+### Import bookmarks
+
+```
+static-marks import [options] <file>
+
+Options:
+  -o, --output [file]  output to a file (use stdout by default)
+```
+
+Examples:
+
+```bash
+static-marks import exported.html > imported.yml
+```
+
+## Features
+
+- Use custom browser search engines with a `?search=%s` URL param ([example](https://darekkay.com/static-marks/demo/default.html?search=fire)).
+- Use custom web page templates. If you don't like the default UI, provide your own ([example](https://darekkay.com/static-marks/demo/custom.html) based on [this template](https://github.com/darekkay/static-marks/blob/master/docs/examples/templates/custom.html)).
+
+## File format
+
+Bookmark files are written in [YAML](http://yaml.org). There are multiple levels of hierarchy:
+
+```
+Collection:
+  - Bucket:
+    - Link 1: https://example.com
+    - Link 2:
+      - https://example.com
+    - Link with notes:
+      - https://example.com
+      - This is a text note
+      - Link note: https://example.com</pre>
+```
+
+If multiple files are provided to `static-marks`, they will become selectable via a menu.
 
 ## License
 
 Copyright 2019 Darek Kay <hello@darekkay.com>
 
-This project and its contents are open source under the [MIT license](LICENSE).
+This project and its contents are open source under the [MIT license](https://github.com/darekkay/static-marks/blob/master/LICENSE).

@@ -26,6 +26,7 @@ program
     console.log("Examples:");
     console.log("");
     console.log("  $ static-marks build bookmarks.yml > bookmarks.html");
+    console.log("  $ static-marks build files/* > bookmarks.html");
   });
 
 // import

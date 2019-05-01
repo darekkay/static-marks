@@ -1,0 +1,22 @@
+Apps:
+  - Browsers:
+    - Firefox: https://www.mozilla.org/firefox/
+    - Chrome: https://www.google.com/chrome/
+    - Opera: https://www.opera.com/
+    - Safari: https://www.apple.com/safari/
+    - Internet Explorer:
+      - https://www.microsoft.com/download/internet-explorer.aspx
+      - Not sure how this got on the list
+
+  - Editors:
+    - Notepad++: https://notepad-plus-plus.org/
+    - VSCode: https://code.visualstudio.com/
+    - Atom: https://atom.io/
+
+Projects:
+  - Live:
+    - App and Play: https://darekkay.com/app-and-play/#/
+    - Board Games: https://darekkay.com/board-games/
+    - Dashboard: https://dashboard.darekkay.com/
+    - Static Marks: https://darekkay.com/static-marks/
+    - Tip of the Day: https://tips.darekkay.com/
