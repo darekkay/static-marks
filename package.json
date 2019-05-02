@@ -49,7 +49,7 @@
     "lint:check": "eslint **/*.js",
     "lint:fix": "eslint --fix **/*.js",
     "prepublishOnly": "npm run lint:check && npm run test",
-    "start": "node bin/static-marks -o build/bookmarks.html test/examples/*",
+    "start": "node bin/static-marks -o build/bookmarks.html build test/examples/*",
     "test": "mocha"
   }
 }
