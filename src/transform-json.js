@@ -1,5 +1,7 @@
 /** Transform the YAML-to-JSON output into a more convenient data structure */
 
+const escapeUrl = url => url.replace(/<\/script>/g, "<\\/script>");
+
 const transformNote = note => {
   if (typeof note === "string") {
     // text note
@@ -12,7 +14,7 @@ const transformNote = note => {
   const linkName = Object.keys(note)[0];
   return {
     title: linkName,
-    url: note[linkName]
+    url: escapeUrl(note[linkName])
   };
 };
 
@@ -21,7 +23,9 @@ const transformLink = link => {
 
   const result = {
     title: Object.keys(link)[0],
-    url: typeof link[linkName] === "string" ? link[linkName] : link[linkName][0]
+    url: escapeUrl(
+      typeof link[linkName] === "string" ? link[linkName] : link[linkName][0]
+    )
   };
 
   if (typeof link[linkName] === "string") {

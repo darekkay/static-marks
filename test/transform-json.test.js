@@ -72,4 +72,39 @@ describe("YAML Converter", () => {
 
     expect(transform(yaml)).to.deep.equal(expected);
   });
+
+  it("escapes URLs", () => {
+    const yaml = {
+      Collection: [
+        {
+          Bucket: [
+            {
+              // eslint-disable-next-line no-script-url
+              "Link 1": "javascript:'<script></script>'"
+            }
+          ]
+        }
+      ]
+    };
+
+    const expected = [
+      {
+        title: "Collection",
+        buckets: [
+          {
+            title: "Bucket",
+            links: [
+              {
+                title: "Link 1",
+                // eslint-disable-next-line no-script-url
+                url: "javascript:'<script><\\/script>'"
+              }
+            ]
+          }
+        ]
+      }
+    ];
+
+    expect(transform(yaml)).to.deep.equal(expected);
+  });
 });
