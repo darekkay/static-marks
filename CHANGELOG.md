@@ -1,5 +1,7 @@
 ## Unreleased
 
+## 2.0.1 (2019-05-15)
+- :bug: Fix bookmarklets containing `</script>`.
 
 ## 2.0.0 (2019-05-02)
 - :sparkles: Import bookmarks from Chrome, Firefox or Pocket.
