@@ -1,9 +1,12 @@
 language: node_js
 node_js:
-  - "8"
+  - "10"
 
-script: npm run prepublishOnly
+cache:
+  yarn: true
+
+script: yarn ci
 
 branches:
   only:
-  - master
+    - master
