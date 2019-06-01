@@ -1,5 +1,8 @@
 ## Unreleased
 
+## 2.0.2 (2019-06-01)
+- :bug: Publish package with LF line endings for yarn (see [#5480](https://github.com/yarnpkg/yarn/issues/5480)).
+
 ## 2.0.1 (2019-05-15)
 - :bug: Fix bookmarklets containing `</script>`.
 
