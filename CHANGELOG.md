@@ -1,5 +1,9 @@
 ## Unreleased
 
+## 2.0.3 (2019-07-17)
+- :bug: Fix search field cut-off on mobile.
+- :construction_worker: Update dependencies.
+
 ## 2.0.2 (2019-06-01)
 - :bug: Publish package with LF line endings for yarn (see [#5480](https://github.com/yarnpkg/yarn/issues/5480)).
 
