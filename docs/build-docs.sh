@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 rm -rf build
 mkdir -p build/assets
 
@@ -11,6 +13,7 @@ pandoc \
   --metadata description="Convert your plain bookmark files into a shareable static web app." \
   --metadata authorUrl="https://darekkay.com" \
   --metadata githubUrl="https://github.com/darekkay/static-marks" \
+  --metadata lang="en" \
   --to html \
   --standalone \
   --highlight-style="$HOME/.pandoc/themes/tomorrow-night.theme" \
