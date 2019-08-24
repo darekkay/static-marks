@@ -113,7 +113,32 @@ static-marks import exported.html > imported.yml
 
 Bookmark files are written in [YAML](http://yaml.org). There are multiple levels of hierarchy:
 
+```yaml
+Collection:
+  - Bucket:
+    - Link: https://example.com
 ```
+
+A link URL can be expressed either as an item property or as a child item:
+
+```yaml
+- Link 1: https://example.com
+- Link 2:
+  - https://example.com
+```
+
+Notes and nested links are added as children of a link (the first element is the link URL):
+
+```yaml
+- Link with notes:
+  - https://example.com
+  - This is a text note
+  - Link note: https://example.com</pre>
+```
+
+Here's a complete example:
+
+```yaml
 Collection:
   - Bucket:
     - Link 1: https://example.com
