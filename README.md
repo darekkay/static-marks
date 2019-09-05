@@ -86,6 +86,8 @@ Examples:
 
 ```bash
 static-marks build bookmarks.yml > bookmarks.html  # Single file
+static-marks build -o bookmarks.html bookmark.yml  # Alt. notation
+static-marks build f1.yml f2.yml > bookmarks.html  # Multiple files
 static-marks build files/* > bookmarks.html        # All files at path
 ```
 
