@@ -10,14 +10,20 @@ Convert your **plain bookmark** files into a **static web app**.
 
 </div>
 
-<!-- ![Screenshot](assets/img/screenshot.png) -->
-
 - **Share** your bookmarks app via a single HTML file.
 - It's **free** and [open source](https://github.com/darekkay/static-marks).
 - Browser-independent.
 - **Import** bookmarks from Chrome, Firefox or Pocket.
 
-🔖 [**View Live Demo**](https://darekkay.com/static-marks/demo/default.html) 
+🔖 [**View Live Demo**](https://darekkay.com/static-marks/demo/default.html)
+
+## Demo
+
+<div align="center" class="text-center">
+
+![](assets/img/screencast.gif)
+
+</div>
 
 ## Quickstart
 
