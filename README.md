@@ -160,6 +160,12 @@ Collection:
 
 If multiple files are provided to `static-marks`, they will become selectable via a menu.
 
+## Development and Contribution
+
+The frontend part of Static Mark is maintained in [another repository](https://github.com/darekkay/static-marks-app), where a template file (`_template.html`) is being generated. This approach makes it possible to include the whole application and user-defined bookmarks in a single HTML file.
+
+If you want to provide any frontend-related changes, please create a PR in the other repository. Changes to the core CLI application are handled here instead.
+
 ## License
 
 Copyright 2019 Darek Kay <hello@darekkay.com>
