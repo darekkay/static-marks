@@ -1,4 +1,6 @@
-## Unreleased
+## 2.0.4 (2019-10-31)
+- :rocket: Show an error and help if a CLI command is missing.
+- :construction_worker: Update dependencies.
 
 ## 2.0.3 (2019-07-17)
 - :bug: Fix search field cut-off on mobile.

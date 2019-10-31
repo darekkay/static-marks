@@ -44,7 +44,7 @@
     "url": "https://github.com/darekkay/static-marks.git"
   },
   "scripts": {
-    "build": "node bin/static-marks -o build/bookmarks.html build test/examples/*",
+    "build": "node bin/static-marks build -o build/bookmarks.html test/examples/*",
     "ci": "npm run lint:check && npm run test",
     "format": "prettier --write -- \"{src,bin,test}/**/*.{js,json}\"",
     "lint:check": "eslint **/*.js",
