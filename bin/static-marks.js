@@ -10,7 +10,7 @@ const importBookmarks = require("./import");
 
 program
   .description(pkg.description)
-  .usage("[options] <command>")
+  .usage("<command> [options]")
   .version(pkg.version);
 
 // build
@@ -44,6 +44,11 @@ program
 
 program.parse(process.argv);
 
-if (program.args.length === 0) {
+// eslint-disable-next-line no-underscore-dangle
+const commands = program.args.filter(argument => argument._name);
+
+// missing/unknown subcommand
+if (program.args.length === 0 || commands.length === 0) {
+  console.error(`Error: Missing or unknown command.\n`);
   program.help();
 }
