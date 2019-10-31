@@ -1,7 +1,7 @@
 {
   "name": "static-marks",
   "description": "Shareable bookmarks",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "author": "Darek Kay <hello@darekkay.com> (https://darekkay.com/)",
   "bin": {
     "static-marks": "bin/static-marks.js"
@@ -11,19 +11,19 @@
   },
   "dependencies": {
     "bookmarks-parser": "1.5.0",
-    "commander": "3.0.1",
-    "glob": "7.1.4",
+    "commander": "3.0.2",
+    "glob": "7.1.5",
     "js-yaml": "3.13.1",
     "mkdirp": "0.5.1"
   },
   "devDependencies": {
     "chai": "4.2.0",
-    "eslint": "6.3.0",
+    "eslint": "6.6.0",
     "eslint-config-airbnb-base": "14.0.0",
-    "eslint-config-prettier": "6.3.0",
+    "eslint-config-prettier": "6.5.0",
     "eslint-plugin-import": "2.18.2",
-    "eslint-plugin-prettier": "3.1.0",
-    "mocha": "6.2.0",
+    "eslint-plugin-prettier": "3.1.1",
+    "mocha": "6.2.2",
     "prettier": "1.18.2"
   },
   "files": [
