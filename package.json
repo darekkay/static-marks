@@ -1,7 +1,7 @@
 {
   "name": "static-marks",
   "description": "Shareable bookmarks",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "author": "Darek Kay <hello@darekkay.com> (https://darekkay.com/)",
   "bin": {
     "static-marks": "bin/static-marks.js"

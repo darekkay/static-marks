@@ -1,3 +1,6 @@
+## 2.0.5 (2019-10-31)
+- :construction_worker: Republish package with LF line endings.
+
 ## 2.0.4 (2019-10-31)
 - :rocket: Show an error and help if a CLI command is missing.
 - :construction_worker: Update dependencies.
