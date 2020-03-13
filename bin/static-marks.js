@@ -7,6 +7,7 @@ const pkg = require("../package.json");
 
 const build = require("./build");
 const importBookmarks = require("./import");
+const report = require("./report");
 
 program
   .description(pkg.description)
@@ -40,6 +41,19 @@ program
     console.log("Examples:");
     console.log("");
     console.log("  $ static-marks import exported.html > imported.yml");
+  });
+
+// report
+program
+  .command("report <files...>")
+  .description("report bookmarks")
+  .action((args, options) => report({ args, options }))
+  .on("--help", () => {
+    console.log("");
+    console.log("Examples:");
+    console.log("");
+    console.log("  $ static-marks report bookmarks.yml");
+    console.log("  $ static-marks report files/*");
   });
 
 program.parse(process.argv);
