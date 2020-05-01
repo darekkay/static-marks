@@ -1,3 +1,9 @@
+## 2.1.0 (2020-05-xx)
+
+- :sparkles: Redesign the UI.
+- :sparkles: Enable first-level notes.
+- :sparkles: Include a `report` feature.
+
 ## 2.0.5 (2019-10-31)
 - :construction_worker: Republish package with LF line endings.
 
