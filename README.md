@@ -73,6 +73,7 @@ Options:
 Commands:
   build [options] <files...>  build bookmarks app
   import [options] <file>     import bookmarks from chrome, firefox or pocket
+  report <files...>           report bookmarks
 ```
 
 Run `static-marks <command> --help` to view the usage of a specific command.
@@ -110,6 +111,21 @@ Examples:
 
 ```bash
 static-marks import exported.html > imported.yml
+```
+
+### View a report for your bookmarks
+
+Currently, the report contains only the total bookmarks cound. In the future, it might be used for detecting duplicate and dead links.
+
+```
+static-marks report [options] <files...>
+```
+
+Examples:
+
+```bash
+static-marks report bookmarks.yml
+static-marks report files/*
 ```
 
 ## Features
