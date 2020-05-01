@@ -1,22 +1,67 @@
 Apps:
   - Browsers:
-    - Firefox: https://www.mozilla.org/firefox/
-    - Chrome: https://www.google.com/chrome/
-    - Opera: https://www.opera.com/
-    - Safari: https://www.apple.com/safari/
-    - Internet Explorer:
-      - https://www.microsoft.com/download/internet-explorer.aspx
-      - Not sure how this got on the list
+      - Firefox: https://www.mozilla.org/firefox/
+      - Chrome: https://www.google.com/chrome/
+      - Opera: https://www.opera.com/
+      - Safari: https://www.apple.com/safari/
+      - Internet Explorer:
+          - https://www.microsoft.com/download/internet-explorer.aspx
+          - Not sure how this got on the list
 
-  - Editors:
-    - Notepad++: https://notepad-plus-plus.org/
-    - VSCode: https://code.visualstudio.com/
-    - Atom: https://atom.io/
+  - Note-taking:
+      - OneNote: https://www.onenote.com
+      - Evernote: https://evernote.com
+      - Notion: https://www.notion.so/
+      - Simplenote: https://simplenote.com/
+
+  - Todo lists:
+      - Todoist: https://todoist.com
+      - TickTick: https://ticktick.com
+      - Remember the Milk: https://www.rememberthemilk.com
+      - Habitica:
+          - https://habitica.com/static/home
+          - Utilizes gamification
+
+  - Editors / IDEs:
+      - Notepad++: https://notepad-plus-plus.org/
+      - VSCode: https://code.visualstudio.com/
+      - IntelliJ IDEA: https://www.jetbrains.com/idea/
+      - Sublime Text: https://www.sublimetext.com/
+      - Atom: https://atom.io/
+
+Software Development:
+  - API Documentation:
+      - DevDocs.io:
+          - https://devdocs.io/
+          - devdocs-desktop: https://github.com/egoist/devdocs-desktop
+      - Zeal: https://zealdocs.org/
+      - Velocity: http://velocity.silverlakesoftware.com/
+      - Dash: https://kapeli.com/dash
+
+  - Documentation:
+      - VuePress: https://vuepress.vuejs.org
+      - Docusaurus: https://docusaurus.io/
+      - Docsify: https://docsify.js.org/#/
+      - Docute: https://github.com/leptosia/docute
+
+  - Software Licenses:
+      - TLDRLegal - Software Licenses: https://tldrlegal.com/
+      - Choose a License: https://choosealicense.com/
+
+  - Sandbox:
+      - CodeSandbox: https://codesandbox.io
+      - CodePen: https://codepen.io/
+      - JSFiddle: https://jsfiddle.net/
+
+  - Domain Finder:
+      - Namechk: https://namechk.com/
+      - NameMesh: https://www.namemesh.com/
+      - Domize: https://domize.com/
 
 Projects:
   - Live:
-    - App and Play: https://darekkay.com/app-and-play/#/
-    - Board Games: https://darekkay.com/board-games/
-    - Dashboard: https://dashboard.darekkay.com/
-    - Static Marks: https://darekkay.com/static-marks/
-    - Tip of the Day: https://tips.darekkay.com/
+      - Board Games: https://darekkay.com/board-games/
+      - Dashboard: https://dashboard.darekkay.com/
+      - Static Marks: https://darekkay.com/static-marks/
+      - Tip of the Day: https://tips.darekkay.com/
+      - Todoist Export: https://darekkay.com/todoist-export/

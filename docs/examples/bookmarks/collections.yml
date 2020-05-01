@@ -1,28 +1,29 @@
 Collections:
-
   - Photos:
-    - LibreStock: http://librestock.com/
-    - Stock Up: https://www.sitebuilderreport.com/stock-up
-    - Pexels: https://www.pexels.com/
-    - FindAPhoto: http://finda.photo/
+      - LibreStock: http://librestock.com/
+      - Stock Up: https://www.sitebuilderreport.com/stock-up
+      - Pexels: https://www.pexels.com/
+      - FindAPhoto: http://finda.photo/
 
   - Icons:
-    - Font Awesome:
-      - http://fontawesome.io/icons/
-      - Font Awesome Favicon Generator: https://paulferrett.com/fontawesome-favicon/
-      - FA → PNG: http://fa2png.io/
-    - IconMonstr: https://iconmonstr.com/
-    - Simple Icons (Brands): https://simpleicons.org/
+      - Font Awesome:
+          - https://fontawesome.com/icons
+          - Font Awesome Favicon Generator: https://paulferrett.com/fontawesome-favicon/
+          - FA → PNG: http://fa2png.io/
+      - IconMonstr: https://iconmonstr.com/
+      - Simple Icons (Brands): https://simpleicons.org/
+      - The Noun Project: https://thenounproject.com/
 
-  - Images:
-    - Undraw (SVG): https://undraw.co/
-    - Many Pixels (SVG): https://gallery.manypixels.co/
+  - Illustrations:
+      - Undraw (SVG): https://undraw.co/
+      - Many Pixels (SVG): https://www.manypixels.co/gallery/
+      - Illlustrations: https://illlustrations.co/
+      - Lukasz Adam: https://lukaszadam.com/illustrations
 
   - Music:
-    - Free Music Archive: http://freemusicarchive.org/
-    - Jamendo: https://www.jamendo.com/
-    - Audio Library - No Copyright Music: https://www.youtube.com/channel/UCht8qITGkBvXKsR1Byln-wA
-    - NoCopyrightSounds: https://www.youtube.com/channel/UC_aEa8K-EOJ3D6gOs7HcyNg
+      - Bensound: https://www.bensound.com/
+      - Free Music Archive: http://freemusicarchive.org/
+      - Jamendo: https://www.jamendo.com/
 
   - Fonts:
       - Font Squirrel: https://www.fontsquirrel.com/
@@ -31,5 +32,5 @@ Collections:
           - GitHub Repository: https://github.com/google/fonts
 
   - Resources:
-    - Awesome list of Awesome lists: https://github.com/sindresorhus/awesome
-    - Awesome Stock Resources: https://github.com/neutraltone/awesome-stock-resources
+      - Awesome list of Awesome lists: https://github.com/sindresorhus/awesome
+      - Awesome Stock Resources: https://github.com/neutraltone/awesome-stock-resources
