@@ -168,6 +168,6 @@ If you want to provide any frontend-related changes, please create a PR in the o
 
 ## License
 
-Copyright 2019 Darek Kay <hello@darekkay.com>
+Copyright 2020 Darek Kay <hello@darekkay.com>
 
 This project and its contents are open source under the [MIT license](https://github.com/darekkay/static-marks/blob/master/LICENSE).
