@@ -121,9 +121,9 @@
           const linkListNode = document.createElement("ul");
           bucket.links.forEach(link => {
             const linkItemNode = document.createElement("li");
-            const linkNode = document.createElement("a");
+            const linkNode = document.createElement(link.url ? "a" : "div");
             linkNode.innerText = link.title;
-            linkNode.href = link.url;
+            if (link.url) linkNode.href = link.url;
 
             // bookmark notes are stripped in this template
             // iterate over link.notes to display them

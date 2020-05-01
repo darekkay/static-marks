@@ -3,6 +3,7 @@ Simple Collection:
     - link1: https://example.com
     - link2:
       - https://example.com
+    - first level note
 
   - Bucket:
     - link:

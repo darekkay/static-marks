@@ -19,6 +19,12 @@ const transformNote = note => {
 };
 
 const transformLink = link => {
+  if (typeof link === "string") {
+    // note bookmark
+    return {
+      title: link
+    };
+  }
   const linkName = Object.keys(link)[0];
 
   const result = {

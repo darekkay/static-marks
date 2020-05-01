@@ -144,6 +144,15 @@ Notes and nested links are added as children of a link (the first element is the
   - Link note: https://example.com</pre>
 ```
 
+First-level notes can be used to describe or structure a bucket:
+
+```yaml
+- Bucket:
+  - Link 1: https://example.com
+  - Carpe diem!
+```
+
+
 Here's a complete example:
 
 ```yaml
@@ -156,6 +165,7 @@ Collection:
       - https://example.com
       - This is a text note
       - Link note: https://example.com</pre>
+    - First-level note
 ```
 
 If multiple files are provided to `static-marks`, they will become selectable via a menu.

@@ -17,7 +17,8 @@ describe("YAML Converter", () => {
                 "Note 1",
                 { "Note 2": "https://example.com" }
               ]
-            }
+            },
+            "First level note"
           ]
         }
       ],
@@ -49,7 +50,8 @@ describe("YAML Converter", () => {
                     url: "https://example.com"
                   }
                 ]
-              }
+              },
+              { title: "First level note" }
             ]
           }
         ]
