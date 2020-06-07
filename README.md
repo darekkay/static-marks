@@ -115,7 +115,7 @@ static-marks import exported.html > imported.yml
 
 ### View a report for your bookmarks
 
-Currently, the report contains only the total bookmarks cound. In the future, it might be used for detecting duplicate and dead links.
+Currently, the report contains only the total bookmarks count. In the future, it might be used for detecting duplicate and dead links.
 
 ```
 static-marks report [options] <files...>
