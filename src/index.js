@@ -10,6 +10,7 @@ const { writeFile } = require("./utils");
 const build = (files, config) => {
   const template = fs.readFileSync(config.templateFilePath, "utf-8");
 
+  let loadFailed = false;
   const bookmarks = files
     .map(file => {
       try {
@@ -19,10 +20,16 @@ const build = (files, config) => {
           collections: transform(json)
         };
       } catch (e) {
+        loadFailed = true;
         return logger.exception(`Could not convert YAML file: ${file}\n `, e);
       }
     })
     .filter(bookmark => bookmark !== undefined);
+
+  if (loadFailed) {
+    logger.error("Process aborted: at least one YAML file is malformed.");
+    process.exit(1);
+  }
 
   const result = render({ template, bookmarks, config });
 
