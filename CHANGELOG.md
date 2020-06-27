@@ -1,4 +1,9 @@
-## 2.1.0 (2020-05-xx)
+## 2.2.0 (2020-06-27)
+
+- :sparkles: Abort the process if at least one YAML file is malformed.
+- :sparkles: Include bookmark URL in the filter.
+
+## 2.1.0 (2020-05-01)
 
 - :sparkles: Redesign the UI.
 - :sparkles: Enable first-level notes.
