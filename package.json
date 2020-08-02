@@ -13,19 +13,21 @@
     "axios": "0.19.2",
     "bookmarks-parser": "1.5.0",
     "commander": "3.0.2",
-    "glob": "7.1.5",
-    "js-yaml": "3.13.1",
+    "glob": "7.1.6",
+    "js-yaml": "3.14.0",
     "mkdirp": "0.5.1"
   },
   "devDependencies": {
+    "@darekkay/eslint-config": "2.1.1",
     "chai": "4.2.0",
-    "eslint": "6.6.0",
-    "eslint-config-airbnb-base": "14.0.0",
-    "eslint-config-prettier": "6.5.0",
-    "eslint-plugin-import": "2.18.2",
-    "eslint-plugin-prettier": "3.1.1",
-    "mocha": "6.2.2",
-    "prettier": "1.18.2"
+    "eslint": "7.6.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-unicorn": "21.0.0",
+    "mocha": "8.1.0",
+    "prettier": "2.0.5"
   },
   "files": [
     "bin",
@@ -46,10 +48,10 @@
   },
   "scripts": {
     "build": "node bin/static-marks build -o build/bookmarks.html docs/examples/bookmarks/*",
-    "ci": "npm run lint:check && npm run test",
-    "format": "prettier --write -- \"{src,bin,test}/**/*.{js,json}\"",
-    "lint:check": "eslint **/*.js",
-    "lint:fix": "eslint --fix **/*.js",
+    "ci": "npm run lint && npm run test",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "prepublishOnly": "npm run lint:check && npm run test",
     "test": "mocha"
   }

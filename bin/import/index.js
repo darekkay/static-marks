@@ -12,7 +12,7 @@ const importBookmarks = ({ file, options }) => {
   }
 
   const config = {
-    output: options.output
+    output: options.output,
   };
 
   index.importBookmarks(files[0], config);

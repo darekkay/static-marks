@@ -1,0 +1,9 @@
+node_modules
+/.git
+/.idea
+/dist
+/build
+/public
+
+/docs
+src/_template.html

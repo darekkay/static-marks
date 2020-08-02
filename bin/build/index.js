@@ -6,8 +6,8 @@ const logger = require("../../src/logger");
 
 const build = ({ args, options }) => {
   const files = []
-    .concat(...args.map(file => glob.sync(file, { realpath: true })))
-    .filter(file => file.endsWith(".yml"));
+    .concat(...args.map((file) => glob.sync(file, { realpath: true })))
+    .filter((file) => file.endsWith(".yml"));
 
   if (files.length === 0) {
     logger.error(`No *.yml files found. (Used glob pattern: ${args})`);
@@ -19,7 +19,7 @@ const build = ({ args, options }) => {
     title: options.title || "Static Marks",
     templateFilePath:
       options.templateFile ||
-      path.join(__dirname, "..", "..", "src", "_template.html")
+      path.join(__dirname, "..", "..", "src", "_template.html"),
   };
 
   index.build(files, config);

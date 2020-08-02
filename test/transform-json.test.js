@@ -9,24 +9,24 @@ describe("YAML Converter", () => {
         {
           Bucket: [
             {
-              "Link 1": "https://example.com"
+              "Link 1": "https://example.com",
             },
             {
               "Link 2": [
                 "https://example.org",
                 "Note 1",
-                { "Note 2": "https://example.com" }
-              ]
+                { "Note 2": "https://example.com" },
+              ],
             },
-            "First level note"
-          ]
-        }
+            "First level note",
+          ],
+        },
       ],
       "Second collection": [
         {
-          Bucket: [{ Link: ["https://example.com"] }]
-        }
-      ]
+          Bucket: [{ Link: ["https://example.com"] }],
+        },
+      ],
     };
 
     const expected = [
@@ -38,7 +38,7 @@ describe("YAML Converter", () => {
             links: [
               {
                 title: "Link 1",
-                url: "https://example.com"
+                url: "https://example.com",
               },
               {
                 title: "Link 2",
@@ -47,14 +47,14 @@ describe("YAML Converter", () => {
                   { title: "Note 1" },
                   {
                     title: "Note 2",
-                    url: "https://example.com"
-                  }
-                ]
+                    url: "https://example.com",
+                  },
+                ],
               },
-              { title: "First level note" }
-            ]
-          }
-        ]
+              { title: "First level note" },
+            ],
+          },
+        ],
       },
       {
         title: "Second collection",
@@ -64,12 +64,12 @@ describe("YAML Converter", () => {
             links: [
               {
                 title: "Link",
-                url: "https://example.com"
-              }
-            ]
-          }
-        ]
-      }
+                url: "https://example.com",
+              },
+            ],
+          },
+        ],
+      },
     ];
 
     expect(transform(yaml)).to.deep.equal(expected);
@@ -82,11 +82,11 @@ describe("YAML Converter", () => {
           Bucket: [
             {
               // eslint-disable-next-line no-script-url
-              "Link 1": "javascript:'<script></script>'"
-            }
-          ]
-        }
-      ]
+              "Link 1": "javascript:'<script></script>'",
+            },
+          ],
+        },
+      ],
     };
 
     const expected = [
@@ -99,12 +99,12 @@ describe("YAML Converter", () => {
               {
                 title: "Link 1",
                 // eslint-disable-next-line no-script-url
-                url: "javascript:'<script><\\/script>'"
-              }
-            ]
-          }
-        ]
-      }
+                url: "javascript:'<script><\\/script>'",
+              },
+            ],
+          },
+        ],
+      },
     ];
 
     expect(transform(yaml)).to.deep.equal(expected);

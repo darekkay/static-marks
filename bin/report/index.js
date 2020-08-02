@@ -6,7 +6,7 @@ const yaml = require("js-yaml");
 
 const logger = require("../../src/logger");
 
-const flatten = array => {
+const flatten = (array) => {
   return array.reduce((flat, toFlatten) => {
     return flat.concat(
       Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten
@@ -14,12 +14,12 @@ const flatten = array => {
   }, []);
 };
 
-const extractLinks = file => {
+const extractLinks = (file) => {
   return flatten(
     Object.values(file).reduce(
       (result, buckets) => [
         ...result,
-        ...buckets.map(bucket => Object.values(bucket))
+        ...buckets.map((bucket) => Object.values(bucket)),
       ],
       []
     )
@@ -28,8 +28,8 @@ const extractLinks = file => {
 
 const report = ({ args }) => {
   const files = []
-    .concat(...args.map(file => glob.sync(file, { realpath: true })))
-    .filter(file => file.endsWith(".yml"));
+    .concat(...args.map((file) => glob.sync(file, { realpath: true })))
+    .filter((file) => file.endsWith(".yml"));
 
   if (files.length === 0) {
     logger.error(`No *.yml files found. (Used glob pattern: ${args})`);
@@ -37,20 +37,20 @@ const report = ({ args }) => {
   }
 
   const links = files
-    .map(file => {
+    .map((file) => {
       try {
         return yaml.safeLoad(fs.readFileSync(file, "utf8"));
       } catch (e) {
         return logger.exception(`Could not convert YAML file: ${file}\n `, e);
       }
     })
-    .filter(bookmark => bookmark !== undefined)
+    .filter((bookmark) => bookmark !== undefined)
     .reduce((result, file) => [...result, ...extractLinks(file)], [])
-    .map(link => {
+    .map((link) => {
       const [key, value] = Object.entries(link)[0];
       return {
         title: key,
-        url: typeof value === "string" ? value : Object.values(value)[0]
+        url: typeof value === "string" ? value : Object.values(value)[0],
       };
     });
 

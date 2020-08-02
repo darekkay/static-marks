@@ -12,19 +12,19 @@ const build = (files, config) => {
 
   let loadFailed = false;
   const bookmarks = files
-    .map(file => {
+    .map((file) => {
       try {
         const json = yaml.safeLoad(fs.readFileSync(file, "utf8"));
         return {
           key: path.basename(file, ".yml"),
-          collections: transform(json)
+          collections: transform(json),
         };
       } catch (e) {
         loadFailed = true;
         return logger.exception(`Could not convert YAML file: ${file}\n `, e);
       }
     })
-    .filter(bookmark => bookmark !== undefined);
+    .filter((bookmark) => bookmark !== undefined);
 
   if (loadFailed) {
     logger.error("Process aborted: at least one YAML file is malformed.");

@@ -59,7 +59,7 @@ program
 program.parse(process.argv);
 
 // eslint-disable-next-line no-underscore-dangle
-const commands = program.args.filter(argument => argument._name);
+const commands = program.args.filter((argument) => argument._name);
 
 // missing/unknown subcommand
 if (program.args.length === 0 || commands.length === 0) {

@@ -7,10 +7,10 @@ const { writeFile } = require("../utils");
 
 const flatten = (bookmarks, folder, result) => {
   const category = { [folder]: [] };
-  bookmarks.forEach(bookmark => {
+  bookmarks.forEach((bookmark) => {
     if (bookmark.type === "bookmark") {
       category[folder].push({
-        [bookmark.title]: bookmark.url
+        [bookmark.title]: bookmark.url,
       });
     } else if (bookmark.type === "folder") {
       flatten(bookmark.children, bookmark.title, result);

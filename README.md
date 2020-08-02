@@ -140,7 +140,7 @@ Bookmark files are written in [YAML](http://yaml.org). There are multiple levels
 ```yaml
 Collection:
   - Bucket:
-    - Link: https://example.com
+      - Link: https://example.com
 ```
 
 A link URL can be expressed either as an item property or as a child item:
@@ -148,40 +148,39 @@ A link URL can be expressed either as an item property or as a child item:
 ```yaml
 - Link 1: https://example.com
 - Link 2:
-  - https://example.com
+    - https://example.com
 ```
 
 Notes and nested links are added as children of a link (the first element is the link URL):
 
 ```yaml
 - Link with notes:
-  - https://example.com
-  - This is a text note
-  - Link note: https://example.com</pre>
+    - https://example.com
+    - This is a text note
+    - Link note: https://example.com</pre>
 ```
 
 First-level notes can be used to describe or structure a bucket:
 
 ```yaml
 - Bucket:
-  - Link 1: https://example.com
-  - Carpe diem!
+    - Link 1: https://example.com
+    - Carpe diem!
 ```
-
 
 Here's a complete example:
 
 ```yaml
 Collection:
   - Bucket:
-    - Link 1: https://example.com
-    - Link 2:
-      - https://example.com
-    - Link with notes:
-      - https://example.com
-      - This is a text note
-      - Link note: https://example.com</pre>
-    - First-level note
+      - Link 1: https://example.com
+      - Link 2:
+          - https://example.com
+      - Link with notes:
+          - https://example.com
+          - This is a text note
+          - Link note: https://example.com</pre>
+      - First-level note
 ```
 
 If multiple files are provided to `static-marks`, they will become selectable via a menu.
