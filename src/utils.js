@@ -5,15 +5,15 @@ const mkdirp = require("mkdirp");
 const logger = require("./logger");
 
 const writeFile = (output, contents) => {
-  mkdirp(path.dirname(output), (err) => {
-    if (err) return logger.error(err);
+  mkdirp(path.dirname(output), (error) => {
+    if (error) return logger.error(error);
 
-    return fs.writeFile(output, contents, (error) =>
-      error
-        ? logger.error(error)
+    return fs.writeFile(output, contents, (writeError) =>
+      writeError
+        ? logger.error(writeError)
         : logger.info(`Saved file: ${path.resolve(output)}`)
     );
   });
 };
 
-exports.writeFile = writeFile;
+module.exports.writeFile = writeFile;

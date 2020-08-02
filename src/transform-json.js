@@ -43,7 +43,7 @@ const transformLink = (link) => {
   if (notes.length === 0) return result;
   return {
     ...result,
-    notes: notes.map(transformNote),
+    notes: notes.map((note) => transformNote(note)),
   };
 };
 
@@ -51,12 +51,12 @@ const transformBucket = (bucket) => {
   const bucketName = Object.keys(bucket)[0];
   return {
     title: bucketName,
-    links: bucket[bucketName].map(transformLink),
+    links: bucket[bucketName].map((link) => transformLink(link)),
   };
 };
 
 module.exports = (json) =>
   Object.keys(json).map((collection) => ({
     title: collection,
-    buckets: json[collection].map(transformBucket),
+    buckets: json[collection].map((bucket) => transformBucket(bucket)),
   }));

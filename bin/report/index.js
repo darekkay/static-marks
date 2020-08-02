@@ -27,8 +27,8 @@ const extractLinks = (file) => {
 };
 
 const report = ({ args }) => {
-  const files = []
-    .concat(...args.map((file) => glob.sync(file, { realpath: true })))
+  const files = args
+    .flatMap((file) => glob.sync(file, { realpath: true }))
     .filter((file) => file.endsWith(".yml"));
 
   if (files.length === 0) {
@@ -40,8 +40,11 @@ const report = ({ args }) => {
     .map((file) => {
       try {
         return yaml.safeLoad(fs.readFileSync(file, "utf8"));
-      } catch (e) {
-        return logger.exception(`Could not convert YAML file: ${file}\n `, e);
+      } catch (error) {
+        return logger.exception(
+          `Could not convert YAML file: ${file}\n `,
+          error
+        );
       }
     })
     .filter((bookmark) => bookmark !== undefined)

@@ -21,14 +21,14 @@ const flatten = (bookmarks, folder, result) => {
 
 const importBookmarks = (file, config) => {
   const content = fs.readFileSync(file, "utf-8");
-  parse(content, (err, res) => {
-    if (err) {
-      logger.error(err);
+  parse(content, (error, result) => {
+    if (error) {
+      logger.error(error);
       return;
     }
 
     const flattened = [];
-    flatten(res.bookmarks, "root", flattened);
+    flatten(result.bookmarks, "root", flattened);
 
     const yaml = safeDump({ Imported: flattened });
 
@@ -40,4 +40,4 @@ const importBookmarks = (file, config) => {
   });
 };
 
-exports.importBookmarks = importBookmarks;
+module.exports.importBookmarks = importBookmarks;

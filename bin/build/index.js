@@ -5,8 +5,8 @@ const index = require("../../src/index");
 const logger = require("../../src/logger");
 
 const build = ({ args, options }) => {
-  const files = []
-    .concat(...args.map((file) => glob.sync(file, { realpath: true })))
+  const files = args
+    .flatMap((file) => glob.sync(file, { realpath: true }))
     .filter((file) => file.endsWith(".yml"));
 
   if (files.length === 0) {

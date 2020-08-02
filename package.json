@@ -29,6 +29,9 @@
     "mocha": "8.1.0",
     "prettier": "2.0.5"
   },
+  "engines": {
+    "node": ">=12.16.3"
+  },
   "files": [
     "bin",
     "src"

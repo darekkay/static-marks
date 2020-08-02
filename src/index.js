@@ -19,9 +19,12 @@ const build = (files, config) => {
           key: path.basename(file, ".yml"),
           collections: transform(json),
         };
-      } catch (e) {
+      } catch (error) {
         loadFailed = true;
-        return logger.exception(`Could not convert YAML file: ${file}\n `, e);
+        return logger.exception(
+          `Could not convert YAML file: ${file}\n `,
+          error
+        );
       }
     })
     .filter((bookmark) => bookmark !== undefined);
@@ -40,4 +43,4 @@ const build = (files, config) => {
   }
 };
 
-exports.build = build;
+module.exports.build = build;
