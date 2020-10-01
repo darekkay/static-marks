@@ -1,0 +1,79 @@
+{
+  "projectName": "static-marks",
+  "projectOwner": "darekkay",
+  "files": [
+    "README.md"
+  ],
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "imageSize": 45,
+  "contributorsPerLine": 10,
+  "contributorTemplate": "<a href='<%= contributor.profile %>' title='<%= contributor.login %> is awesome!'><img src='<%= contributor.avatar_url %>' alt='<%= contributor.login %>' width='<%= options.imageSize %>px' /></a>",
+  "commitConvention": "none",
+  "skipCi": true,
+  "contributors": [
+    {
+      "login": "darekkay",
+      "name": "Darek Kay",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/3101914?v=4",
+      "profile": "https://darekkay.com/",
+      "contributions": [
+        "maintenance"
+      ]
+    },
+    {
+      "login": "gaerfield",
+      "name": "gaerfield",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/13051868?v=4",
+      "profile": "https://github.com/gaerfield",
+      "contributions": [
+        "maintenance"
+      ]
+    },
+    {
+      "login": "kaushalyap",
+      "name": "kaushalyap",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/24698778?v=4",
+      "profile": "https://github.com/kaushalyap",
+      "contributions": [
+        "maintenance"
+      ]
+    },
+    {
+      "login": "k-kalinowski",
+      "name": "k-kalinowski",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/8605057?v=4",
+      "profile": "https://github.com/k-kalinowski",
+      "contributions": [
+        "maintenance"
+      ]
+    },
+    {
+      "login": "g33k247",
+      "name": "John S. Galliano",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/8498814?v=4",
+      "profile": "https://github.com/g33k247",
+      "contributions": [
+        "maintenance"
+      ]
+    },
+    {
+      "login": "dzmitry-lahoda",
+      "name": "Dzmitry Lahoda",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/757125?v=4",
+      "profile": "https://github.com/dzmitry-lahoda",
+      "contributions": [
+        "maintenance"
+      ]
+    },
+    {
+      "login": "diegombeltran",
+      "name": "Diego Muñoz Beltrán",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/7081281?v=4",
+      "profile": "http://www.diegomunozbeltran.com/",
+      "contributions": [
+        "maintenance"
+      ]
+    }
+  ]
+}

@@ -191,6 +191,32 @@ The frontend part of Static Mark is maintained in [another repository](https://g
 
 If you want to provide any frontend-related changes, please create a PR in the other repository. Changes to the core CLI application are handled here instead.
 
+## Contributors
+
+Thanks goes to these wonderful people:
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href='https://darekkay.com/' title='darekkay is awesome!'><img src='https://avatars0.githubusercontent.com/u/3101914?v=4' alt='darekkay' width='45px' /></a></td>
+    <td align="center"><a href='https://github.com/gaerfield' title='gaerfield is awesome!'><img src='https://avatars0.githubusercontent.com/u/13051868?v=4' alt='gaerfield' width='45px' /></a></td>
+    <td align="center"><a href='https://github.com/kaushalyap' title='kaushalyap is awesome!'><img src='https://avatars3.githubusercontent.com/u/24698778?v=4' alt='kaushalyap' width='45px' /></a></td>
+    <td align="center"><a href='https://github.com/k-kalinowski' title='k-kalinowski is awesome!'><img src='https://avatars2.githubusercontent.com/u/8605057?v=4' alt='k-kalinowski' width='45px' /></a></td>
+    <td align="center"><a href='https://github.com/g33k247' title='g33k247 is awesome!'><img src='https://avatars0.githubusercontent.com/u/8498814?v=4' alt='g33k247' width='45px' /></a></td>
+    <td align="center"><a href='https://github.com/dzmitry-lahoda' title='dzmitry-lahoda is awesome!'><img src='https://avatars3.githubusercontent.com/u/757125?v=4' alt='dzmitry-lahoda' width='45px' /></a></td>
+    <td align="center"><a href='http://www.diegomunozbeltran.com/' title='diegombeltran is awesome!'><img src='https://avatars2.githubusercontent.com/u/7081281?v=4' alt='diegombeltran' width='45px' /></a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://allcontributors.org) specification to acknowledge all contributions.
+
 ## License
 
 Copyright 2020 Darek Kay <hello@darekkay.com>
