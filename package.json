@@ -55,7 +55,7 @@
     "format": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "prepublishOnly": "npm run lint:check && npm run test",
+    "prepublishOnly": "npm run lint && npm run test",
     "test": "mocha"
   }
 }
