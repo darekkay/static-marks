@@ -1,3 +1,8 @@
+## 2.2.1 (2020-10-01)
+
+- :sparkles: Autofocus search field after loading the page or clearing the input.
+- :construction_worker: Update dependencies.
+
 ## 2.2.0 (2020-06-27)
 
 - :sparkles: Abort the process if at least one YAML file is malformed.
