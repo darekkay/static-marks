@@ -207,12 +207,12 @@ Thanks goes to these wonderful people:
     <td align="center"><a href='https://github.com/g33k247' title='g33k247 is awesome!'><img src='https://avatars0.githubusercontent.com/u/8498814?v=4' alt='g33k247' width='45px' /></a></td>
     <td align="center"><a href='https://github.com/dzmitry-lahoda' title='dzmitry-lahoda is awesome!'><img src='https://avatars3.githubusercontent.com/u/757125?v=4' alt='dzmitry-lahoda' width='45px' /></a></td>
     <td align="center"><a href='http://www.diegomunozbeltran.com/' title='diegombeltran is awesome!'><img src='https://avatars2.githubusercontent.com/u/7081281?v=4' alt='diegombeltran' width='45px' /></a></td>
+    <td align="center"><a href='http://veereshr.me' title='veerreshr is awesome!'><img src='https://avatars0.githubusercontent.com/u/59141533?v=4' alt='veerreshr' width='45px' /></a></td>
   </tr>
 </table>
 
-<!-- markdownlint-restore -->
+<!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://allcontributors.org) specification to acknowledge all contributions.
