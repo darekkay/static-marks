@@ -208,6 +208,7 @@ Thanks goes to these wonderful people:
     <td align="center"><a href='https://github.com/dzmitry-lahoda' title='dzmitry-lahoda is awesome!'><img src='https://avatars3.githubusercontent.com/u/757125?v=4' alt='dzmitry-lahoda' width='45px' /></a></td>
     <td align="center"><a href='http://www.diegomunozbeltran.com/' title='diegombeltran is awesome!'><img src='https://avatars2.githubusercontent.com/u/7081281?v=4' alt='diegombeltran' width='45px' /></a></td>
     <td align="center"><a href='http://veereshr.me' title='veerreshr is awesome!'><img src='https://avatars0.githubusercontent.com/u/59141533?v=4' alt='veerreshr' width='45px' /></a></td>
+    <td align="center"><a href='https://github.com/nausher' title='nausher is awesome!'><img src='https://avatars3.githubusercontent.com/u/79359?v=4' alt='nausher' width='45px' /></a></td>
   </tr>
 </table>
 
