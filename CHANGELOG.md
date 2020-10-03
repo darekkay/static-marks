@@ -1,3 +1,7 @@
+## 2.2.2 (2020-10-03)
+
+- :bug: Fix imports from Raindrop.io (#14)
+
 ## 2.2.1 (2020-10-01)
 
 - :sparkles: Autofocus search field after loading the page or clearing the input.
