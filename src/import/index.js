@@ -12,7 +12,8 @@ const flatten = (bookmarks, folder, result) => {
       category[folder].push({
         [bookmark.title]: bookmark.url,
       });
-    } else if (bookmark.type === "folder") {
+    }
+    if (Array.isArray(bookmark.children) && bookmark.children.length > 0) {
       flatten(bookmark.children, bookmark.title, result);
     }
   });
