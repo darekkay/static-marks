@@ -31,7 +31,11 @@ const importBookmarks = (file, config) => {
     const flattened = [];
     flatten(result.bookmarks, "root", flattened);
 
-    const yaml = safeDump({ Imported: flattened });
+    const nonEmpty = flattened.filter(
+      (category) => Object.values(category)[0].length > 0
+    );
+
+    const yaml = safeDump({ Imported: nonEmpty });
 
     if (config.output) {
       writeFile(config.output, yaml);
