@@ -1,14 +1,13 @@
 /** Transform the YAML-to-JSON output into a more convenient data structure */
 function isValidUrl(string) {
   try {
+    // eslint-disable-next-line no-new
     new URL(string);
-  } catch (_) {
+  } catch {
     return false; 
   }
- 
   return true;
 }
-
 const escapeUrl = (url) => url.replace(/<\/script>/g, "<\\/script>");
 
 const transformNote = (note) => {
@@ -19,7 +18,7 @@ const transformNote = (note) => {
         title: note,
         url: escapeUrl(note),     
       };
-    };
+    }
     // text note
     return {
       title: note,
