@@ -151,14 +151,14 @@ A link URL can be expressed either as an item property or as a child item:
     - https://example.com
 ```
 
-Notes and nested links are added as children of a link (the first element is the link URL).
-__NOTE:__ if the text is a valid-formatted URL it will be automatically converted to a link:
+Notes and nested links are added as children of a link (the first element is the link URL). If the text is a valid-formatted URL it will be automatically converted to a link:
 
 ```yaml
 - Link with notes:
     - https://example.com
     - This is a text note
-    - Link note: https://example.com</pre>
+    - Link note: https://example.com
+    - https://example.net
 ```
 
 First-level notes can be used to describe or structure a bucket:

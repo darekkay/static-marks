@@ -10,6 +10,8 @@ Simple Collection:
           - https://example.com
           - link: https://example.com
           - This is just a text note, but it's also quite long
+          - The following note is automatically treated as a link
+          - https://example.net
 
 Whitespace collection:
   - Whitespace bucket:
