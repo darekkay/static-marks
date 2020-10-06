@@ -151,7 +151,8 @@ A link URL can be expressed either as an item property or as a child item:
     - https://example.com
 ```
 
-Notes and nested links are added as children of a link (the first element is the link URL):
+Notes and nested links are added as children of a link (the first element is the link URL).
+__NOTE:__ if the text is a valid-formatted URL it will be automatically converted to a link:
 
 ```yaml
 - Link with notes:

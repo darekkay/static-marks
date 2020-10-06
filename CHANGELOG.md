@@ -1,3 +1,7 @@
+## 2.2.3 (2020-10-05)
+
+- :sparkles: Treat notes starting with http and https as links (#12)
+
 ## 2.2.2 (2020-10-03)
 
 - :bug: Fix imports from Raindrop.io (#14)
