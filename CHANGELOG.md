@@ -1,4 +1,4 @@
-## 2.2.3 (2020-10-05)
+## 2.2.3 (2020-10-06)
 
 - :sparkles: Treat notes starting with http and https as links (#12)
 
