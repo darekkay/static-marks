@@ -1,10 +1,9 @@
 const fs = require("fs");
 const glob = require("glob");
+const logger = require("@darekkay/logger");
 
 // const axios = require("axios");
 const yaml = require("js-yaml");
-
-const logger = require("../../src/logger");
 
 const flatten = (array) => {
   return array.reduce((flat, toFlatten) => {
@@ -41,9 +40,9 @@ const report = ({ args }) => {
       try {
         return yaml.safeLoad(fs.readFileSync(file, "utf8"));
       } catch (error) {
-        return logger.exception(
+        return logger.error(
           `Could not convert YAML file: ${file}\n `,
-          error
+          error.message || error
         );
       }
     })

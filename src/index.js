@@ -1,8 +1,8 @@
 const fs = require("fs");
 const path = require("path");
 const yaml = require("js-yaml");
+const logger = require("@darekkay/logger");
 
-const logger = require("./logger");
 const transform = require("./transform-json");
 const render = require("./render");
 const { writeFile } = require("./utils");
@@ -21,9 +21,9 @@ const build = (files, config) => {
         };
       } catch (error) {
         loadFailed = true;
-        return logger.exception(
+        return logger.error(
           `Could not convert YAML file: ${file}\n `,
-          error
+          error.message || error
         );
       }
     })

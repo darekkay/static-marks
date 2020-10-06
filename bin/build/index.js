@@ -1,8 +1,8 @@
 const path = require("path");
 const glob = require("glob");
+const logger = require("@darekkay/logger");
 
 const index = require("../../src/index");
-const logger = require("../../src/logger");
 
 const build = ({ args, options }) => {
   const files = args

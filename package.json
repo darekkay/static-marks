@@ -10,6 +10,7 @@
     "url": "https://github.com/darekkay/static-marks/issues"
   },
   "dependencies": {
+    "@darekkay/logger": "1.0.2",
     "axios": "0.19.2",
     "bookmarks-parser": "1.5.0",
     "commander": "3.0.2",

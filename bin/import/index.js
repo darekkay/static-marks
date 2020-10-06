@@ -1,7 +1,7 @@
 const glob = require("glob");
+const logger = require("@darekkay/logger");
 
 const index = require("../../src/import/index");
-const logger = require("../../src/logger");
 
 const importBookmarks = ({ file, options }) => {
   const files = glob.sync(file, { realpath: true });

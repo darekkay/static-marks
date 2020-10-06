@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-/* eslint-disable no-console */
 
 const program = require("commander");
+const logger = require("@darekkay/logger");
 
 const pkg = require("../package.json");
 
@@ -23,11 +23,11 @@ program
   .option("--template-file [file]", "use a custom web page template")
   .action((args, options) => build({ args, options }))
   .on("--help", () => {
-    console.log("");
-    console.log("Examples:");
-    console.log("");
-    console.log("  $ static-marks build bookmarks.yml > bookmarks.html");
-    console.log("  $ static-marks build files/* > bookmarks.html");
+    logger.log("");
+    logger.log("Examples:");
+    logger.log("");
+    logger.log("  $ static-marks build bookmarks.yml > bookmarks.html");
+    logger.log("  $ static-marks build files/* > bookmarks.html");
   });
 
 // import
@@ -37,10 +37,10 @@ program
   .option("-o, --output [file]", "output to a file (use stdout by default)")
   .action((file, options) => importBookmarks({ file, options }))
   .on("--help", () => {
-    console.log("");
-    console.log("Examples:");
-    console.log("");
-    console.log("  $ static-marks import exported.html > imported.yml");
+    logger.log("");
+    logger.log("Examples:");
+    logger.log("");
+    logger.log("  $ static-marks import exported.html > imported.yml");
   });
 
 // report
@@ -49,11 +49,11 @@ program
   .description("report bookmarks")
   .action((args, options) => report({ args, options }))
   .on("--help", () => {
-    console.log("");
-    console.log("Examples:");
-    console.log("");
-    console.log("  $ static-marks report bookmarks.yml");
-    console.log("  $ static-marks report files/*");
+    logger.log("");
+    logger.log("Examples:");
+    logger.log("");
+    logger.log("  $ static-marks report bookmarks.yml");
+    logger.log("  $ static-marks report files/*");
   });
 
 program.parse(process.argv);
@@ -63,6 +63,6 @@ const commands = program.args.filter((argument) => argument._name);
 
 // missing/unknown subcommand
 if (program.args.length === 0 || commands.length === 0) {
-  console.error(`Error: Missing or unknown command.\n`);
+  logger.error(`Error: Missing or unknown command.\n`);
   program.help();
 }

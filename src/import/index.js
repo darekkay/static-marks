@@ -1,8 +1,8 @@
 const fs = require("fs");
 const parse = require("bookmarks-parser");
 const { safeDump } = require("js-yaml");
+const logger = require("@darekkay/logger");
 
-const logger = require("../logger");
 const { writeFile } = require("../utils");
 
 const flatten = (bookmarks, folder, result) => {
