@@ -1,15 +1,30 @@
 /** Transform the YAML-to-JSON output into a more convenient data structure */
+function isValidUrl(string) {
+  try {
+    new URL(string);
+  } catch (_) {
+    return false; 
+  }
+ 
+  return true;
+}
 
 const escapeUrl = (url) => url.replace(/<\/script>/g, "<\\/script>");
 
 const transformNote = (note) => {
   if (typeof note === "string") {
+    // text note formatted as URL
+    if (isValidUrl(note)) {
+      return {
+        title: note,
+        url: escapeUrl(note),     
+      };
+    };
     // text note
     return {
       title: note,
     };
   }
-
   // link note
   const linkName = Object.keys(note)[0];
   return {
