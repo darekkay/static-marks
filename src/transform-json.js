@@ -4,7 +4,7 @@ function isValidUrl(string) {
     // eslint-disable-next-line no-new
     new URL(string);
   } catch {
-    return false; 
+    return false;
   }
   return true;
 }
@@ -16,7 +16,7 @@ const transformNote = (note) => {
     if (isValidUrl(note)) {
       return {
         title: note,
-        url: escapeUrl(note),     
+        url: escapeUrl(note),
       };
     }
     // text note

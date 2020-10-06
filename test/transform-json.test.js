@@ -53,7 +53,7 @@ describe("YAML Converter", () => {
                 ],
               },
               { title: "First level note" },
-              {  title: "https://example.com" },
+              { title: "https://example.com" },
             ],
           },
         ],
