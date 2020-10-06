@@ -25,7 +25,7 @@ const extractLinks = (file) => {
   );
 };
 
-const report = ({ args }) => {
+const report = ({ args, options }) => {
   const files = args
     .flatMap((file) => glob.sync(file, { realpath: true }))
     .filter((file) => file.endsWith(".yml"));
@@ -50,6 +50,10 @@ const report = ({ args }) => {
     .reduce((result, file) => [...result, ...extractLinks(file)], [])
     .map((link) => {
       const [key, value] = Object.entries(link)[0];
+      // count notes with a null value
+      if (typeof link === "string") {
+        return null;
+      }
       return {
         title: key,
         url: typeof value === "string" ? value : Object.values(value)[0],
@@ -57,6 +61,28 @@ const report = ({ args }) => {
     });
 
   logger.info("Number of bookmarks:", links.length);
+
+  if (!options.duplicates) {
+    return;
+  }
+
+  const linksWithoutNotes = links
+    .filter((link) => link !== null)
+    .map((link) => link.url);
+  if (new Set(linksWithoutNotes).size === linksWithoutNotes.length) {
+    logger.info("No duplicate urls");
+    return;
+  }
+  logger.info("Duplicate urls found");
+  const urlsWithCounts = {};
+  linksWithoutNotes.forEach((x) => {
+    urlsWithCounts[x] = (urlsWithCounts[x] || 0) + 1;
+  });
+  Object.keys(urlsWithCounts).forEach(function (key) {
+    if (urlsWithCounts[key] > 1) {
+      logger.info(`${key} (${urlsWithCounts[key]})`);
+    }
+  });
 
   // TODO: broken link analysis
   // axios.get(links[0].url).then(response => response.status);
