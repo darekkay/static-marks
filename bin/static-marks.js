@@ -47,6 +47,7 @@ program
 program
   .command("report <files...>")
   .description("report bookmarks")
+  .option("-d, --no-duplicates", "do not check for duplicate urls in file")
   .action((args, options) => report({ args, options }))
   .on("--help", () => {
     logger.log("");
