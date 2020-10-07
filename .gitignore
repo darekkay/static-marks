@@ -1,6 +1,9 @@
 ### Node.js ###
 
 /node_modules
+/.pnp
+.pnp.js
+package-lock.json
 .env
 
 ### IDE ###
@@ -16,3 +19,4 @@
 
 /build
 *.log
+.DS_Store
