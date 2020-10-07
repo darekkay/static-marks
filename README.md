@@ -212,6 +212,9 @@ Thanks goes to these wonderful people:
     <td align="center"><a href='https://github.com/nausher' title='nausher is awesome!'><img src='https://avatars3.githubusercontent.com/u/79359?v=4' alt='nausher' width='45px' /></a></td>
     <td align="center"><a href='https://github.com/acer123acer123' title='acer123acer123 is awesome!'><img src='https://avatars3.githubusercontent.com/u/5222071?v=4' alt='acer123acer123' width='45px' /></a></td>
   </tr>
+  <tr>
+    <td align="center"><a href='https://github.com/jflip' title='jflip is awesome!'><img src='https://avatars1.githubusercontent.com/u/9138082?v=4' alt='jflip' width='45px' /></a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
