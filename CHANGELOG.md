@@ -1,4 +1,4 @@
-## Unreleased
+## 2.2.4 (2020-10-19)
 
 - :sparkles: List duplicate links in the report (#8).
 - :rocket: Use URL as label if no explicit label is available (#21).
