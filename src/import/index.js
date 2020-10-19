@@ -35,6 +35,16 @@ const importBookmarks = (file, config) => {
       (category) => Object.values(category)[0].length > 0
     );
 
+    // set implicit labels in empty link labels
+    nonEmpty.forEach((bookmarkFolder) => {
+      Object.values(bookmarkFolder)[0].forEach((bookmark) => {
+        if (!Object.keys(bookmark)[0]) {
+          bookmark[bookmark[""]] = bookmark[""];
+          delete bookmark[""];
+        }
+      });
+    });
+
     const yaml = safeDump({ Imported: nonEmpty });
 
     if (config.output) {
