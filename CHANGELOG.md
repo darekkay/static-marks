@@ -1,20 +1,28 @@
+## Unreleased
+
+- :sparkles: List duplicate links in the report (#8).
+- :rocket: Use URL as label if no explicit label is available (#21).
+- :rocket: Exclude first-level notes from bookmark count (#19).
+- :book: Improve project documentation and demo examples.
+
 ## 2.2.3 (2020-10-06)
 
-- :sparkles: Treat notes starting with http and https as links (#12)
+- :rocket: Treat notes starting with http and https as links (#12).
+- :docs: Include project contributors.
 
 ## 2.2.2 (2020-10-03)
 
-- :bug: Fix imports from Raindrop.io (#14)
+- :bug: Fix imports from Raindrop.io (#14).
 
 ## 2.2.1 (2020-10-01)
 
-- :sparkles: Autofocus search field after loading the page or clearing the input.
+- :rocket: Autofocus search field after loading the page or clearing the input.
 - :construction_worker: Update dependencies.
 
 ## 2.2.0 (2020-06-27)
 
-- :sparkles: Abort the process if at least one YAML file is malformed.
-- :sparkles: Include bookmark URL in the filter.
+- :rocket: Abort the process if at least one YAML file is malformed.
+- :rocket: Include bookmark URL in the filter.
 
 ## 2.1.0 (2020-05-01)
 
