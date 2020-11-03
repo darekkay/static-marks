@@ -1,6 +1,8 @@
 # Static Marks
 
-[![Travis](https://img.shields.io/travis/com/darekkay/static-marks.svg?style=flat-square)](https://travis-ci.com/darekkay/static-marks) [![npm](https://img.shields.io/npm/v/static-marks.svg?style=flat-square)](https://www.npmjs.com/package/static-marks) [![license](https://img.shields.io/github/license/darekkay/static-marks.svg?style=flat-square)](https://github.com/darekkay/static-marks/blob/master/LICENSE)
+[![Build](https://img.shields.io/github/workflow/status/darekkay/static-marks/Continuous%20Integration/master?style=flat-square)](https://github.com/darekkay/static-marks/actions)
+[![npm](https://img.shields.io/npm/v/static-marks.svg?style=flat-square)](https://www.npmjs.com/package/static-marks)
+[![license](https://img.shields.io/github/license/darekkay/static-marks.svg?style=flat-square)](https://github.com/darekkay/static-marks/blob/master/LICENSE)
 
 <div align="center" class="text-center">
 
