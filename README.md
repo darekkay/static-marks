@@ -13,9 +13,9 @@ Convert your **plain bookmark** files into a **static web app**.
 </div>
 
 - **Share** your bookmarks app via a single HTML file.
-- It's **free** and [open source](https://github.com/darekkay/static-marks).
-- Browser-independent.
+- Use with **any modern browser**.
 - **Import** bookmarks from Chrome, Firefox or Pocket.
+- It's **free** and [open source](https://github.com/darekkay/static-marks).
 
 🔖 [**View Live Demo**](https://darekkay.com/static-marks/demo/default.html)
 
@@ -34,25 +34,29 @@ Convert your **plain bookmark** files into a **static web app**.
 
 ## Quickstart
 
-- Install Static Marks:
+- [Install](#installation) Static Marks:
 
-```bash
+```shell
 npm install -g static-marks
 ```
 
-- Convert your (exported) browser bookmarks to YAML:
+- Create a plain text `bookmarks.yml` [YAML file](#file-format) containing your bookmarks. Alternatively, [import](#import-bookmarks) your existing browser bookmarks:
 
-```bash
+```shell
 static-marks import browser-bookmarks.html > bookmarks.yml
 ```
 
-- Generate your bookmarks app:
+- [Build](#build-bookmarks-app) your bookmarks app:
 
-```bash
+```shell
 static-marks build bookmarks.yml > bookmarks.html
 ```
 
+- Open `bookmarks.html` in your browser.
+
 ## Installation
+
+This tool requires Node.js version 12+.
 
 - As a globally available CLI tool:
 
@@ -64,6 +68,12 @@ npm install -g static-marks
 
 ```bash
 npm install --save static-marks
+```
+
+- Without installing:
+
+```shell
+npx static-marks <command>
 ```
 
 - As a [docker container](https://github.com/gaerfield/static-marks-docker) (unofficial).
