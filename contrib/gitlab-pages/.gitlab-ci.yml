@@ -1,0 +1,31 @@
+# Use latest node image
+image: node:latest
+
+# Cache modules
+# http://docs.gitlab.com/ee/ci/yaml/README.html#cache
+cache:
+  paths:
+    - node_modules/
+
+before_script:
+  - npm install static-marks
+
+test:
+  script:
+    - ./node_modules/.bin/static-marks build *.yml > public/index.html 
+  artifacts:
+    paths:
+      - public
+  only:
+    - branches
+  except:
+    - master
+
+pages:
+  script:
+    - ./node_modules/.bin/static-marks build *.yml > public/index.html 
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
