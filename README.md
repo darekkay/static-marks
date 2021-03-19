@@ -236,11 +236,13 @@ Thanks goes to these wonderful people:
   </tr>
   <tr>
     <td align="center"><a href='https://github.com/jflip' title='jflip is awesome!'><img src='https://avatars1.githubusercontent.com/u/9138082?v=4' alt='jflip' width='45px' /></a></td>
+    <td align="center"><a href='https://www.eduardominguez.es' title='e-minguez is awesome!'><img src='https://avatars.githubusercontent.com/u/346758?v=4' alt='e-minguez' width='45px' /></a></td>
   </tr>
 </table>
 
-<!-- markdownlint-enable -->
+<!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://allcontributors.org) specification to acknowledge all contributions.
