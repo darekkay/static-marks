@@ -2,7 +2,6 @@ const fs = require("fs");
 const glob = require("glob");
 const logger = require("@darekkay/logger");
 
-// const axios = require("axios");
 const yaml = require("js-yaml");
 
 const flatten = (array) => {
