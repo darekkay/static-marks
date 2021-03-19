@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 - :book: Add documentation for GitLab Pages integration.
+- :hammer: Add CLI unit tests.
 
 ## [2.2.4] - 2020-10-19
 

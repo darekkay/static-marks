@@ -18,4 +18,6 @@ const importBookmarks = ({ file, options }) => {
   index.importBookmarks(files[0], config);
 };
 
-module.exports = importBookmarks;
+module.exports = {
+  run: importBookmarks,
+};

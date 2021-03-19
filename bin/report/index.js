@@ -86,4 +86,6 @@ const report = ({ args, options }) => {
   // axios.get(links[0].url).then(response => response.status);
 };
 
-module.exports = report;
+module.exports = {
+  run: report,
+};

@@ -25,4 +25,6 @@ const build = ({ args, options }) => {
   index.build(files, config);
 };
 
-module.exports = build;
+module.exports = {
+  run: build,
+};
