@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :book: Add documentation for GitLab Pages integration.
+
 ## [2.2.4] - 2020-10-19
 
 - :sparkles: List duplicate links in the report (#8).
@@ -12,7 +14,7 @@
 ## [2.2.3] - 2020-10-06
 
 - :rocket: Treat notes starting with http and https as links (#12).
-- :docs: Include project contributors.
+- :book: Include project contributors.
 
 ## [2.2.2] - 2020-10-03
 

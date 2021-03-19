@@ -1,0 +1,33 @@
+# Use latest node image
+image: node:latest
+
+# Cache npm dependencies
+cache:
+  key: static-marks
+  paths:
+    - .npm/
+
+before_script:
+  - npm install static-marks --cache .npm --prefer-offline
+
+test:
+  script:
+    - mkdir -p public
+    - ./node_modules/.bin/static-marks build bookmarks/*.yml > public/index.html
+  artifacts:
+    paths:
+      - public
+  only:
+    - branches
+  except:
+    - master
+
+pages:
+  script:
+    - mkdir -p public
+    - ./node_modules/.bin/static-marks build bookmarks/*.yml > public/index.html
+  artifacts:
+    paths:
+      - public
+  only:
+    - master

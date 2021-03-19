@@ -198,6 +198,16 @@ Collection:
 
 If multiple files are provided to `static-marks`, they will become selectable via a menu.
 
+## Using Static Marks with Gitlab Pages 
+
+You can leverage [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/) to host your Static Marks instance. Check out the [example repository](https://gitlab.com/darekkay/static-marks-gitlab-ci) and a [live demo](https://darekkay.gitlab.io/static-marks-gitlab-ci).
+
+1. [Create](https://gitlab.com/projects/new) a new GitLab repository.
+2. Include the example [.gitlab-ci.yml](docs/examples/ci/.gitlab-ci.yml) file in the root directory.
+3. Add all your bookmark `*.yml` files in a `bookmarks` directory.
+
+After every push to the `master` branch, your Static Marks page will be rebuilt. By default, it will be available at `https://<USERNAME>.gitlab.io/<PROJECTNAME>`.
+
 ## Development and Contribution
 
 The frontend part of Static Mark is maintained in [another repository](https://github.com/darekkay/static-marks-app), where a template file (`_template.html`) is being generated. This approach makes it possible to include the whole application and user-defined bookmarks in a single HTML file.
