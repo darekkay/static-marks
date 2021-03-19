@@ -18,5 +18,6 @@ package-lock.json
 ### App ###
 
 /build
+/test/temp
 *.log
 .DS_Store

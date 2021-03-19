@@ -44,7 +44,7 @@ const cli = (program, argv) => {
   // report
   program
     .command("report <files...>")
-    .description("report bookmarks")
+    .description("display bookmarks report")
     .option("-d, --no-duplicates", "do not check for duplicate bookmark URLs")
     .action((args, options) => report.run({ args, options }))
     .on("--help", () => {
