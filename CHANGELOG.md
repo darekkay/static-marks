@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [2.2.5] - 2021-03-21
+
 - :book: Add documentation for GitLab Pages integration.
 - :construction_worker: Add CLI unit tests.
 - :construction_worker: Update dependencies.
@@ -112,7 +114,8 @@
 
 - :tada: Initial release.
 
-[Unreleased]: https://github.com/darekkay/static-marks/compare/v2.2.4...HEAD
+[Unreleased]: https://github.com/darekkay/static-marks/compare/v2.2.5...HEAD
+[2.2.5]: https://github.com/darekkay/static-marks/compare/v2.2.4...v2.2.5
 [2.2.4]: https://github.com/darekkay/static-marks/compare/v2.2.3...v2.2.4
 [2.2.3]: https://github.com/darekkay/static-marks/compare/v2.2.2...v2.2.3
 [2.2.2]: https://github.com/darekkay/static-marks/compare/v2.2.1...v2.2.2
