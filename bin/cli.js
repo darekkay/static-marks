@@ -6,6 +6,7 @@ const build = require("./build/index");
 const importBookmarks = require("./import");
 const report = require("./report");
 
+// eslint-disable-next-line consistent-return
 const cli = (program, argv) => {
   program
     .description(pkg.description)
@@ -57,12 +58,22 @@ const cli = (program, argv) => {
 
   program.parse(argv);
 
-  const commands = program.args.filter((argument) => argument._name);
+  // const commands = program.args.filter((argument) => argument._name);
+
+  const availableCommands = program.commands.map((command) => command.name());
 
   // missing/unknown subcommand
-  if (program.args.length === 0 || commands.length === 0) {
-    logger.error(`Error: Missing or unknown command.\n`);
+  if (program.rawArgs.length < 3) {
+    logger.error(`Error: Missing command.\n`);
     program.help();
+    return process.exit(1);
+  }
+
+  const command = program.rawArgs[2];
+  if (!availableCommands.includes(command)) {
+    logger.error(`Error: Unknown command '${command}'.\n`);
+    program.help();
+    return process.exit(1);
   }
 };
 

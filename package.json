@@ -10,24 +10,24 @@
     "url": "https://github.com/darekkay/static-marks/issues"
   },
   "dependencies": {
-    "@darekkay/logger": "1.0.2",
+    "@darekkay/logger": "1.1.0",
     "bookmarks-parser": "1.5.0",
-    "commander": "3.0.2",
+    "commander": "4.1.1",
     "glob": "7.1.6",
-    "js-yaml": "3.14.0",
-    "mkdirp": "0.5.1"
+    "js-yaml": "4.0.0",
+    "mkdirp": "1.0.4"
   },
   "devDependencies": {
-    "@darekkay/eslint-config": "2.1.1",
-    "chai": "4.2.0",
-    "eslint": "7.6.0",
-    "eslint-config-prettier": "6.11.0",
-    "eslint-plugin-import": "2.22.0",
+    "@darekkay/eslint-config": "2.4.0",
+    "chai": "4.3.4",
+    "eslint": "7.17.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-import": "2.22.1",
     "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-prettier": "3.1.4",
-    "eslint-plugin-unicorn": "21.0.0",
-    "mocha": "8.1.0",
-    "prettier": "2.0.5",
+    "eslint-plugin-prettier": "3.3.1",
+    "eslint-plugin-unicorn": "26.0.1",
+    "mocha": "8.3.2",
+    "prettier": "2.2.1",
     "sinon": "9.2.4"
   },
   "engines": {

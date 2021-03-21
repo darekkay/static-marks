@@ -11,7 +11,7 @@ const report = require("../bin/report");
 const cli = require("../bin/cli");
 
 describe("CLI", () => {
-  afterEach(function () {
+  afterEach(() => {
     sinon.restore();
   });
 
@@ -101,9 +101,12 @@ describe("CLI", () => {
     expect(reportSpy.callCount).to.equal(1);
   });
 
-  it("display help page if no command is provided", () => {
+  it("display help page and exit if no command is provided", () => {
     const consoleErrorSpy = sinon.fake();
     sinon.replace(logger, "error", consoleErrorSpy);
+
+    const processExitSpy = sinon.fake();
+    sinon.replace(process, "exit", processExitSpy);
 
     const program = new commander.Command();
     const programHelpSpy = sinon.fake();
@@ -112,14 +115,18 @@ describe("CLI", () => {
     cli(program, ["node", "static-marks"]);
 
     expect(
-      consoleErrorSpy.calledWithMatch(sinon.match("Missing or unknown command"))
+      consoleErrorSpy.calledWithMatch(sinon.match("Missing command"))
     ).to.equal(true);
     expect(programHelpSpy.callCount).to.equal(1);
+    expect(processExitSpy.callCount).to.equal(1);
   });
 
-  it("display help page if an unknown command is provided", () => {
+  it("display help page and exit if an unknown command is provided", () => {
     const consoleErrorSpy = sinon.fake();
     sinon.replace(logger, "error", consoleErrorSpy);
+
+    const processExitSpy = sinon.fake();
+    sinon.replace(process, "exit", processExitSpy);
 
     const program = new commander.Command();
     const programHelpSpy = sinon.fake();
@@ -128,8 +135,9 @@ describe("CLI", () => {
     cli(program, ["node", "static-marks", "unknown"]);
 
     expect(
-      consoleErrorSpy.calledWithMatch(sinon.match("Missing or unknown command"))
+      consoleErrorSpy.calledWithMatch(sinon.match("Unknown command"))
     ).to.equal(true);
     expect(programHelpSpy.callCount).to.equal(1);
+    expect(processExitSpy.callCount).to.equal(1);
   });
 });

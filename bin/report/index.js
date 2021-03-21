@@ -37,7 +37,7 @@ const report = ({ args, options }) => {
   const links = files
     .map((file) => {
       try {
-        return yaml.safeLoad(fs.readFileSync(file, "utf8"));
+        return yaml.load(fs.readFileSync(file, "utf8"));
       } catch (error) {
         return logger.error(
           `Could not convert YAML file: ${file}\n `,

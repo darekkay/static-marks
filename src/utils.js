@@ -4,15 +4,17 @@ const mkdirp = require("mkdirp");
 const logger = require("@darekkay/logger");
 
 const writeFile = (output, contents) => {
-  mkdirp(path.dirname(output), (error) => {
-    if (error) return logger.error(error);
-
-    return fs.writeFile(output, contents, (writeError) =>
-      writeError
-        ? logger.error(writeError)
-        : logger.info(`Saved file: ${path.resolve(output)}`)
-    );
-  });
+  try {
+    mkdirp(path.dirname(output)).then(() => {
+      return fs.writeFile(output, contents, (writeError) =>
+        writeError
+          ? logger.error(writeError)
+          : logger.info(`Saved file: ${path.resolve(output)}`)
+      );
+    });
+  } catch (error) {
+    logger.error(error);
+  }
 };
 
 module.exports.writeFile = writeFile;

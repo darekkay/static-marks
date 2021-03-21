@@ -1,6 +1,6 @@
 const fs = require("fs");
 const parse = require("bookmarks-parser");
-const { safeDump } = require("js-yaml");
+const { dump } = require("js-yaml");
 const logger = require("@darekkay/logger");
 
 const { writeFile } = require("../utils");
@@ -45,7 +45,7 @@ const importBookmarks = (file, config) => {
       });
     });
 
-    const yaml = safeDump({ Imported: nonEmpty });
+    const yaml = dump({ Imported: nonEmpty });
 
     if (config.output) {
       writeFile(config.output, yaml);

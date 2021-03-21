@@ -14,7 +14,7 @@ const build = (files, config) => {
   const bookmarks = files
     .map((file) => {
       try {
-        const json = yaml.safeLoad(fs.readFileSync(file, "utf8"));
+        const json = yaml.load(fs.readFileSync(file, "utf8"));
         return {
           key: path.basename(file, ".yml"),
           collections: transform(json),
