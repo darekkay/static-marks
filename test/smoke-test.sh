@@ -2,6 +2,9 @@
 
 # This is a smoke test that executes different commands
 
+# version
+../bin/static-marks.js --version
+
 # missing command
 ../bin/static-marks.js
 echo "---"
