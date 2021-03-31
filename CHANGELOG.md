@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :construction_worker: Lower minimal supported node version to `12.0.0`.
+
 ## [2.2.5] - 2021-03-21
 
 - :book: Add documentation for GitLab Pages integration.
