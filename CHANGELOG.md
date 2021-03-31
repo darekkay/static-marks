@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [2.2.6] - 2021-03-31
+
 - :construction_worker: Lower minimal supported node version to `12.0.0`.
 
 ## [2.2.5] - 2021-03-21
@@ -116,7 +118,8 @@
 
 - :tada: Initial release.
 
-[Unreleased]: https://github.com/darekkay/static-marks/compare/v2.2.5...HEAD
+[Unreleased]: https://github.com/darekkay/static-marks/compare/v2.2.6...HEAD
+[2.2.6]: https://github.com/darekkay/static-marks/compare/v2.2.5...v2.2.6
 [2.2.5]: https://github.com/darekkay/static-marks/compare/v2.2.4...v2.2.5
 [2.2.4]: https://github.com/darekkay/static-marks/compare/v2.2.3...v2.2.4
 [2.2.3]: https://github.com/darekkay/static-marks/compare/v2.2.2...v2.2.3
