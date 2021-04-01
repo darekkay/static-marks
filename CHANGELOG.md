@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [2.2.7] - 2021-04-01
+
 - :construction_worker: Update logger dependency.
 
 ## [2.2.6] - 2021-03-31
@@ -120,7 +122,8 @@
 
 - :tada: Initial release.
 
-[Unreleased]: https://github.com/darekkay/static-marks/compare/v2.2.6...HEAD
+[Unreleased]: https://github.com/darekkay/static-marks/compare/v2.2.7...HEAD
+[2.2.7]: https://github.com/darekkay/static-marks/compare/v2.2.6...v2.2.7
 [2.2.6]: https://github.com/darekkay/static-marks/compare/v2.2.5...v2.2.6
 [2.2.5]: https://github.com/darekkay/static-marks/compare/v2.2.4...v2.2.5
 [2.2.4]: https://github.com/darekkay/static-marks/compare/v2.2.3...v2.2.4
