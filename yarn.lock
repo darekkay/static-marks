@@ -213,10 +213,10 @@
   dependencies:
     eslint-config-prettier "7.1.0"
 
-"@darekkay/logger@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@darekkay/logger/-/logger-1.1.0.tgz#7bbce023d571cc291fe7b5d025536f414c1e60cf"
-  integrity sha512-ozm2IQjgzyQxLRDwxi/UW/vRDbK4X0jXTUMr++mjqKp3VbJL/erRI7b7xzBATRurKxx+DoOiCcei1nV6oEFBnw==
+"@darekkay/logger@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@darekkay/logger/-/logger-1.1.1.tgz#5de6f1e8d316b673a124454ca3ed54bc0b853717"
+  integrity sha512-XsHPICbC538SxN8ke7/9SezT8Tp9FVvpIwSnsE6svX9EX8jiVY88qbfFUYp5mA0fFZV/+OxEppDazy0ZpGgZCg==
   dependencies:
     kleur "4.1.3"
     log-symbols "4.0.0"

@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :construction_worker: Update logger dependency.
+
 ## [2.2.6] - 2021-03-31
 
 - :construction_worker: Lower minimal supported node version to `12.0.0`.
