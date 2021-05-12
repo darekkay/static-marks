@@ -2,19 +2,28 @@
 
 ## [Unreleased]
 
+## [2.3.0] - 2021-05-12
+
+- :gem: Include a proper focus ring.
+- :bug: Fix print stylesheet.
+- :hammer: Remove app manifest.
+- :hammer: Modernize frontend code.
+- :hammer: Migrate to Vite.
+- :hammer: Update dependencies.
+
 ## [2.2.7] - 2021-04-01
 
-- :construction_worker: Update logger dependency.
+- :hammer: Update logger dependency.
 
 ## [2.2.6] - 2021-03-31
 
-- :construction_worker: Lower minimal supported node version to `12.0.0`.
+- :hammer: Lower minimal supported node version to `12.0.0`.
 
 ## [2.2.5] - 2021-03-21
 
 - :book: Add documentation for GitLab Pages integration.
-- :construction_worker: Add CLI unit tests.
-- :construction_worker: Update dependencies.
+- :hammer: Add CLI unit tests.
+- :hammer: Update dependencies.
 
 ## [2.2.4] - 2020-10-19
 
@@ -35,7 +44,7 @@
 ## [2.2.1] - 2020-10-01
 
 - :rocket: Autofocus search field after loading the page or clearing the input.
-- :construction_worker: Update dependencies.
+- :hammer: Update dependencies.
 
 ## [2.2.0] - 2020-06-27
 
@@ -50,17 +59,17 @@
 
 ## [2.0.5] - 2019-10-31
 
-- :construction_worker: Republish package with LF line endings.
+- :hammer: Republish package with LF line endings.
 
 ## [2.0.4] - 2019-10-31
 
 - :rocket: Show an error and help if a CLI command is missing.
-- :construction_worker: Update dependencies.
+- :hammer: Update dependencies.
 
 ## [2.0.3] - 2019-07-17
 
 - :bug: Fix search field cut-off on mobile.
-- :construction_worker: Update dependencies.
+- :hammer: Update dependencies.
 
 ## [2.0.2] - 2019-06-01
 
@@ -88,11 +97,11 @@
 
 ## [1.0.6] - 2019-04-06
 
-- :construction_worker: Update outdated template file.
+- :hammer: Update outdated template file.
 
 ## [1.0.5] - 2019-04-06
 
-- :construction_worker: Update dependencies.
+- :hammer: Update dependencies.
 - :book: Add link to the unofficial docker container.
 
 ## [1.0.4] - 2018-12-13
@@ -122,7 +131,8 @@
 
 - :tada: Initial release.
 
-[Unreleased]: https://github.com/darekkay/static-marks/compare/v2.2.7...HEAD
+[Unreleased]: https://github.com/darekkay/static-marks/compare/v2.3.0...HEAD
+[2.3.0]: https://github.com/darekkay/static-marks/compare/v2.2.7...v2.3.0
 [2.2.7]: https://github.com/darekkay/static-marks/compare/v2.2.6...v2.2.7
 [2.2.6]: https://github.com/darekkay/static-marks/compare/v2.2.5...v2.2.6
 [2.2.5]: https://github.com/darekkay/static-marks/compare/v2.2.4...v2.2.5
