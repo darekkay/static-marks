@@ -1,9 +1,7 @@
-const { expect } = require("chai");
-
-const transform = require("../src/transform-json.js");
+const transform = require("../transform-json.js");
 
 describe("YAML Converter", () => {
-  it("converts yaml to json", () => {
+  test("converts yaml to json", () => {
     const yaml = {
       Collection: [
         {
@@ -74,10 +72,10 @@ describe("YAML Converter", () => {
       },
     ];
 
-    expect(transform(yaml)).to.deep.equal(expected);
+    expect(transform(yaml)).toEqual(expected);
   });
 
-  it("escapes URLs", () => {
+  test("escapes URLs", () => {
     const yaml = {
       Collection: [
         {
@@ -109,6 +107,6 @@ describe("YAML Converter", () => {
       },
     ];
 
-    expect(transform(yaml)).to.deep.equal(expected);
+    expect(transform(yaml)).toEqual(expected);
   });
 });

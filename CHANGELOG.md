@@ -131,7 +131,7 @@
 
 - :tada: Initial release.
 
-[Unreleased]: https://github.com/darekkay/static-marks/compare/v2.3.0...HEAD
+[unreleased]: https://github.com/darekkay/static-marks/compare/v2.3.0...HEAD
 [2.3.0]: https://github.com/darekkay/static-marks/compare/v2.2.7...v2.3.0
 [2.2.7]: https://github.com/darekkay/static-marks/compare/v2.2.6...v2.2.7
 [2.2.6]: https://github.com/darekkay/static-marks/compare/v2.2.5...v2.2.6

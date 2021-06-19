@@ -1,4 +1,5 @@
 const fs = require("fs");
+
 const parse = require("bookmarks-parser");
 const { dump } = require("js-yaml");
 const logger = require("@darekkay/logger");

@@ -198,7 +198,7 @@ Collection:
 
 If multiple files are provided to `static-marks`, they will become selectable via a menu.
 
-## Using Static Marks with Gitlab Pages 
+## Using Static Marks with Gitlab Pages
 
 You can leverage [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/) to host your Static Marks instance. Check out the [example repository](https://gitlab.com/darekkay/static-marks-gitlab-ci) and a [live demo](https://darekkay.gitlab.io/static-marks-gitlab-ci).
 

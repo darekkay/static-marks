@@ -18,17 +18,7 @@
     "mkdirp": "1.0.4"
   },
   "devDependencies": {
-    "@darekkay/eslint-config": "2.4.0",
-    "chai": "4.3.4",
-    "eslint": "7.17.0",
-    "eslint-config-prettier": "8.1.0",
-    "eslint-plugin-import": "2.22.1",
-    "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-prettier": "3.3.1",
-    "eslint-plugin-unicorn": "26.0.1",
-    "mocha": "8.3.2",
-    "prettier": "2.2.1",
-    "sinon": "9.2.4"
+    "@darekkay/scripts": "1.3.2"
   },
   "engines": {
     "node": ">=12.0.0"
@@ -52,11 +42,10 @@
   },
   "scripts": {
     "build": "node bin/static-marks build -o build/bookmarks.html docs/examples/bookmarks/*",
-    "ci": "npm run lint && npm run test",
-    "format": "prettier --write .",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
-    "prepublishOnly": "npm run lint && npm run test",
-    "test": "mocha"
+    "ci": "dks ci",
+    "format": "dks format",
+    "lint": "dks lint",
+    "prepublishOnly": "dks ci",
+    "test": "dks test"
   }
 }

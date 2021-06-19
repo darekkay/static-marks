@@ -1,11 +1,12 @@
 const fs = require("fs");
+
 const glob = require("glob");
 const logger = require("@darekkay/logger");
-
 const yaml = require("js-yaml");
 
 const flatten = (array) => {
   return array.reduce((flat, toFlatten) => {
+    // eslint-disable-next-line unicorn/prefer-spread
     return flat.concat(
       Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten
     );

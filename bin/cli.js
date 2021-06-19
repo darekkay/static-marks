@@ -1,7 +1,6 @@
 const logger = require("@darekkay/logger");
 
 const pkg = require("../package.json");
-
 const build = require("./build/index");
 const importBookmarks = require("./import");
 const report = require("./report");
