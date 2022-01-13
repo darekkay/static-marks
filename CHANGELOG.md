@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+- :rocket: Add hover title to the "open all bookmarks" button (#29).
+- :hammer: Update dependencies.
+- :hammer: Switch npm scripts to [@darekkay/scripts](https://www.npmjs.com/package/@darekkay/scripts).
+
 ## [2.3.0] - 2021-05-12
 
 - :gem: Include a proper focus ring.
