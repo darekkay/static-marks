@@ -134,7 +134,7 @@ static-marks import exported.html > imported.yml
 
 Currently, the report contains only the total bookmarks count. In the future, it might be used for detecting duplicate and dead links.
 
-```
+```bash
 static-marks report [options] <files...>
 ```
 
@@ -196,7 +196,15 @@ Collection:
       - First-level note
 ```
 
-If multiple files are provided to `static-marks`, they will become selectable via a menu.
+There is an optional 1st level hierarchy level available when you provide more than one bookmark file to `static-marks`. When passing multiple files, a header menu will be displayed to toggle between individual files and all bookmarks.
+
+```bash
+# file toggle menu not necessary/not available
+static-marks build file1.yaml
+
+# file toggle menu available
+static-marks build file1.yaml file2.yaml
+```
 
 ## Using Static Marks with Gitlab Pages
 
