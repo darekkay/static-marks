@@ -238,6 +238,7 @@ Thanks goes to these wonderful people:
     <td align="center"><a href='https://github.com/jflip' title='jflip is awesome!'><img src='https://avatars1.githubusercontent.com/u/9138082?v=4' alt='jflip' width='45px' /></a></td>
     <td align="center"><a href='https://www.eduardominguez.es' title='e-minguez is awesome!'><img src='https://avatars.githubusercontent.com/u/346758?v=4' alt='e-minguez' width='45px' /></a></td>
     <td align="center"><a href='https://github.com/iaeiou' title='iaeiou is awesome!'><img src='https://avatars.githubusercontent.com/u/69427615?v=4' alt='iaeiou' width='45px' /></a></td>
+    <td align="center"><a href='https://github.com/RishiKumarRay' title='RishiKumarRay is awesome!'><img src='https://avatars.githubusercontent.com/u/87641376?v=4' alt='RishiKumarRay' width='45px' /></a></td>
   </tr>
 </table>
 
