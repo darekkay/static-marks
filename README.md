@@ -30,6 +30,7 @@ Convert your **plain bookmark** files into a **static web app**.
 ## Features
 
 - Use custom browser search engines with a `?search=%s` URL param ([example](https://darekkay.com/static-marks/demo/default.html?search=fire)).
+  - In Firefox, right-click the Static Marks search field and select "Add a Keyword for this Search".
 - Use custom web page templates. If you don't like the default UI, provide your own ([example](https://darekkay.com/static-marks/demo/custom.html) based on [this template](https://github.com/darekkay/static-marks/blob/master/docs/examples/templates/custom.html)).
 
 ## Quickstart

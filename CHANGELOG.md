@@ -2,8 +2,11 @@
 
 ## [Unreleased]
 
-- :rocket: Add hover title to the "open all bookmarks" button (#29).
-- :book: Clarify usage of multiple bookmark files (#28).
+- :rocket: Enable adding a custom browser search engine from the filter input ([#30]).
+- :rocket: Add hover title to the "open all bookmarks" button ([#29]).
+- :gem: Include dark mode ([#11]).
+- :gem: Use consistent icons from Font Awesome 5.
+- :book: Clarify usage of multiple bookmark files ([#28]).
 - :hammer: Update dependencies.
 - :hammer: Switch npm scripts to [@darekkay/scripts](https://www.npmjs.com/package/@darekkay/scripts).
 
@@ -32,19 +35,19 @@
 
 ## [2.2.4] - 2020-10-19
 
-- :sparkles: List duplicate links in the report (#8).
-- :rocket: Use URL as label if no explicit label is available (#21).
-- :rocket: Exclude first-level notes from bookmark count (#19).
+- :sparkles: List duplicate links in the report ([#8]).
+- :rocket: Use URL as label if no explicit label is available ([#21]).
+- :rocket: Exclude first-level notes from bookmark count ([#19]).
 - :book: Improve project documentation and demo examples.
 
 ## [2.2.3] - 2020-10-06
 
-- :rocket: Treat notes starting with http and https as links (#12).
+- :rocket: Treat notes starting with http and https as links ([#12]).
 - :book: Include project contributors.
 
 ## [2.2.2] - 2020-10-03
 
-- :bug: Fix imports from Raindrop.io (#14).
+- :bug: Fix imports from Raindrop.io ([#14]).
 
 ## [2.2.1] - 2020-10-01
 
@@ -161,3 +164,13 @@
 [1.0.3]: https://github.com/darekkay/static-marks/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/darekkay/static-marks/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/darekkay/static-marks/compare/tag/v1.0.1
+
+[#8]: https://github.com/darekkay/static-marks/issues/8
+[#11]: https://github.com/darekkay/static-marks/issues/11
+[#12]: https://github.com/darekkay/static-marks/issues/12
+[#14]: https://github.com/darekkay/static-marks/issues/14
+[#19]: https://github.com/darekkay/static-marks/issues/19
+[#21]: https://github.com/darekkay/static-marks/issues/21
+[#28]: https://github.com/darekkay/static-marks/issues/28
+[#29]: https://github.com/darekkay/static-marks/issues/29
+[#30]: https://github.com/darekkay/static-marks/issues/30
