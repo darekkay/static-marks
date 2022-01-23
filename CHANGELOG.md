@@ -139,6 +139,18 @@
 
 - :tada: Initial release.
 
+[#8]: https://github.com/darekkay/static-marks/issues/8
+[#11]: https://github.com/darekkay/static-marks/issues/11
+[#12]: https://github.com/darekkay/static-marks/issues/12
+[#14]: https://github.com/darekkay/static-marks/issues/14
+[#19]: https://github.com/darekkay/static-marks/issues/19
+[#21]: https://github.com/darekkay/static-marks/issues/21
+[#28]: https://github.com/darekkay/static-marks/issues/28
+[#29]: https://github.com/darekkay/static-marks/issues/29
+[#30]: https://github.com/darekkay/static-marks/issues/30
+
+---
+
 [unreleased]: https://github.com/darekkay/static-marks/compare/v2.3.0...HEAD
 [2.3.0]: https://github.com/darekkay/static-marks/compare/v2.2.7...v2.3.0
 [2.2.7]: https://github.com/darekkay/static-marks/compare/v2.2.6...v2.2.7
@@ -164,13 +176,3 @@
 [1.0.3]: https://github.com/darekkay/static-marks/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/darekkay/static-marks/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/darekkay/static-marks/compare/tag/v1.0.1
-
-[#8]: https://github.com/darekkay/static-marks/issues/8
-[#11]: https://github.com/darekkay/static-marks/issues/11
-[#12]: https://github.com/darekkay/static-marks/issues/12
-[#14]: https://github.com/darekkay/static-marks/issues/14
-[#19]: https://github.com/darekkay/static-marks/issues/19
-[#21]: https://github.com/darekkay/static-marks/issues/21
-[#28]: https://github.com/darekkay/static-marks/issues/28
-[#29]: https://github.com/darekkay/static-marks/issues/29
-[#30]: https://github.com/darekkay/static-marks/issues/30
