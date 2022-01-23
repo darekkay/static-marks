@@ -153,7 +153,7 @@
 
 ---
 
-[unreleased]: https://github.com/darekkay/static-marks/compare/v2.3.0...HEAD
+[Unreleased]: https://github.com/darekkay/static-marks/compare/v2.4.0...HEAD
 [2.4.0]: https://github.com/darekkay/static-marks/compare/v2.3.0...v2.4.0
 [2.3.0]: https://github.com/darekkay/static-marks/compare/v2.2.7...v2.3.0
 [2.2.7]: https://github.com/darekkay/static-marks/compare/v2.2.6...v2.2.7
@@ -179,6 +179,3 @@
 [1.0.3]: https://github.com/darekkay/static-marks/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/darekkay/static-marks/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/darekkay/static-marks/compare/tag/v1.0.1
-
-
-[Unreleased]: https://github.com/darekkay/static-marks/compare/v2.4.0...HEAD
