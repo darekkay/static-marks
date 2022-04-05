@@ -22,7 +22,7 @@ const flatten = (bookmarks, folder, result) => {
 };
 
 const importBookmarks = (file, config) => {
-  const content = fs.readFileSync(file, "utf-8");
+  const content = fs.readFileSync(file, "utf8");
   parse(content, (error, result) => {
     if (error) {
       logger.error(error);

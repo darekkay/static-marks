@@ -18,7 +18,7 @@
     "mkdirp": "1.0.4"
   },
   "devDependencies": {
-    "@darekkay/scripts": "1.5.3"
+    "@darekkay/scripts": "1.6.0"
   },
   "engines": {
     "node": ">=12.0.0"

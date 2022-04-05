@@ -9,7 +9,7 @@ const render = require("./render");
 const { writeFile } = require("./utils");
 
 const build = (files, config) => {
-  const template = fs.readFileSync(config.templateFilePath, "utf-8");
+  const template = fs.readFileSync(config.templateFilePath, "utf8");
 
   let loadFailed = false;
   const bookmarks = files
