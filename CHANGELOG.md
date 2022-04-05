@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [2.4.1] - 2022-04-05
+
+- :gem: Include new app icons ([#33]).
+- :hammer: Update dependencies.
+
 ## [2.4.0] - 2022-01-23
 
 - :rocket: Enable adding a custom browser search engine from the filter input ([#30]).
@@ -150,10 +155,12 @@
 [#28]: https://github.com/darekkay/static-marks/issues/28
 [#29]: https://github.com/darekkay/static-marks/issues/29
 [#30]: https://github.com/darekkay/static-marks/issues/30
+[#33]: https://github.com/darekkay/static-marks/issues/33
 
 ---
 
-[Unreleased]: https://github.com/darekkay/static-marks/compare/v2.4.0...HEAD
+[Unreleased]: https://github.com/darekkay/static-marks/compare/v2.4.1...HEAD
+[2.4.1]: https://github.com/darekkay/static-marks/compare/v2.4.0...v2.4.1
 [2.4.0]: https://github.com/darekkay/static-marks/compare/v2.3.0...v2.4.0
 [2.3.0]: https://github.com/darekkay/static-marks/compare/v2.2.7...v2.3.0
 [2.2.7]: https://github.com/darekkay/static-marks/compare/v2.2.6...v2.2.7
