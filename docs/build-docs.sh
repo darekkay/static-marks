@@ -25,8 +25,8 @@ pandoc \
 
 # Build examples
 ../bin/static-marks.js --version
-../bin/static-marks.js build -o ./build/demo/default.html -t "Demo | Static Marks"  ./examples/bookmarks/*
-../bin/static-marks.js build -o ./build/demo/custom.html --template-file ./examples/templates/custom.html build ./examples/bookmarks/*
+../bin/static-marks.js build -o ./build/demo/default.html -t "Demo | Static Marks" ./examples/bookmarks/*
+../bin/static-marks.js build -o ./build/demo/custom.html --template-file ./examples/templates/custom.html ./examples/bookmarks/*
 
 
 # Copy assets

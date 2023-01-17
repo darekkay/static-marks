@@ -1,6 +1,6 @@
 # Static Marks
 
-[![Build](https://img.shields.io/github/workflow/status/darekkay/static-marks/Continuous%20Integration/master?style=flat-square)](https://github.com/darekkay/static-marks/actions)
+[![Build](https://img.shields.io/github/actions/workflow/status/darekkay/static-marks/ci.yml?branch=master&style=flat-square)](https://github.com/darekkay/static-marks/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/static-marks.svg?style=flat-square)](https://www.npmjs.com/package/static-marks)
 [![license](https://img.shields.io/github/license/darekkay/static-marks.svg?style=flat-square)](https://github.com/darekkay/static-marks/blob/master/LICENSE)
 
