@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :hammer: Update dependencies.
+
 ## [2.4.1] - 2022-04-05
 
 - :gem: Include new app icons ([#33]).

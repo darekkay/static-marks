@@ -4,6 +4,7 @@
 
 # version
 ../bin/static-marks.js --version
+echo "---"
 
 # missing command
 ../bin/static-marks.js

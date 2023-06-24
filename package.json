@@ -10,15 +10,15 @@
     "url": "https://github.com/darekkay/static-marks/issues"
   },
   "dependencies": {
-    "@darekkay/logger": "1.2.0",
+    "@darekkay/logger": "3.0.3",
     "bookmarks-parser": "1.5.0",
     "commander": "4.1.1",
-    "glob": "7.2.0",
+    "glob": "7.2.3",
     "js-yaml": "4.1.0",
-    "mkdirp": "1.0.4"
+    "mkdirp": "2.1.6"
   },
   "devDependencies": {
-    "@darekkay/scripts": "1.6.0"
+    "@darekkay/scripts": "2.6.2"
   },
   "engines": {
     "node": ">=12.0.0"
@@ -39,6 +39,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/darekkay/static-marks.git"
+  },
+  "resolutions": {
+    "string-width": "4.2.3",
+    "wrap-ansi": "7.0.0"
   },
   "scripts": {
     "build": "node bin/static-marks build -o build/bookmarks.html docs/examples/bookmarks/*",
