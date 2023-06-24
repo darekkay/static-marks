@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [3.0.0] - 2023-06-24
+
 - :boom: Drop Node 14 support (EOL).
 - :hammer: Update dependencies.
 
@@ -162,7 +164,8 @@
 
 ---
 
-[Unreleased]: https://github.com/darekkay/static-marks/compare/v2.4.1...HEAD
+[unreleased]: https://github.com/darekkay/static-marks/compare/v3.0.0...HEAD
+[3.0.0]: https://github.com/darekkay/static-marks/compare/v2.4.1...v3.0.0
 [2.4.1]: https://github.com/darekkay/static-marks/compare/v2.4.0...v2.4.1
 [2.4.0]: https://github.com/darekkay/static-marks/compare/v2.3.0...v2.4.0
 [2.3.0]: https://github.com/darekkay/static-marks/compare/v2.2.7...v2.3.0
