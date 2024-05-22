@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- :boom: Drop Node 16 support (EOL).
+
 ## [3.0.0] - 2023-06-24
 
 - :boom: Drop Node 14 support (EOL).
