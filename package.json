@@ -40,7 +40,7 @@
     "type": "git",
     "url": "https://github.com/darekkay/static-marks.git"
   },
-  "resolutions": {
+  "overrides": {
     "string-width": "4.2.3",
     "wrap-ansi": "7.0.0"
   },

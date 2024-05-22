@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 - :boom: Drop Node 16 support (EOL).
+- :hammer: Switch from yarn to npm.
 
 ## [3.0.0] - 2023-06-24
 
