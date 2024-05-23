@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 - :boom: Drop Node 16 support (EOL).
+- :rocket: Improve the error message when the YAML file is malformed ([#47]).
 - :hammer: Switch from yarn to npm.
 - :book: Add a troubleshooting section ([#46]).
 
@@ -166,6 +167,7 @@
 [#30]: https://github.com/darekkay/static-marks/issues/30
 [#33]: https://github.com/darekkay/static-marks/issues/33
 [#46]: https://github.com/darekkay/static-marks/issues/46
+[#47]: https://github.com/darekkay/static-marks/issues/47
 
 ---
 
