@@ -111,8 +111,8 @@ Options:
 Examples:
 
 ```bash
-static-marks build bookmarks.yml > bookmarks.html  # Single file
-static-marks build -o bookmarks.html bookmark.yml  # Alt. notation
+static-marks build -o bookmarks.html bookmark.yml  # Single file
+static-marks build bookmarks.yml > bookmarks.html  # Alt. notation
 static-marks build f1.yml f2.yml > bookmarks.html  # Multiple files
 static-marks build files/* > bookmarks.html        # All files at path
 ```
@@ -130,6 +130,7 @@ Examples:
 
 ```bash
 static-marks import exported.html > imported.yml
+static-marks import -o imported.yml exported.html
 ```
 
 ### View a report for your bookmarks
@@ -207,6 +208,14 @@ static-marks build file1.yaml
 # file toggle menu available
 static-marks build file1.yaml file2.yaml
 ```
+
+## Troubleshooting
+
+### Encoding issues
+
+You can use both `>` to pipe the results of a `static-marks` command or the `-o` to provide an explicit output file. There might be cases where the `>` variant doesn't play well with the shell encoding, though.
+
+See [#46](https://github.com/darekkay/static-marks/issues/46) for more information.
 
 ## Using Static Marks with Gitlab Pages
 

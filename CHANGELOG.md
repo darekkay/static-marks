@@ -4,6 +4,7 @@
 
 - :boom: Drop Node 16 support (EOL).
 - :hammer: Switch from yarn to npm.
+- :book: Add a troubleshooting section ([#46]).
 
 ## [3.0.0] - 2023-06-24
 
@@ -164,6 +165,7 @@
 [#29]: https://github.com/darekkay/static-marks/issues/29
 [#30]: https://github.com/darekkay/static-marks/issues/30
 [#33]: https://github.com/darekkay/static-marks/issues/33
+[#46]: https://github.com/darekkay/static-marks/issues/46
 
 ---
 
